@@ -36,6 +36,13 @@
 
 //google替换成google_publice逻辑代码
 -(void)start_google_namespace:(NSString*)path{
+     //检查路径
+    NSFileManager * fm = [NSFileManager defaultManager];
+    if ([fm fileExistsAtPath:path] == NO) {
+        [self log:@"输入路径错误或者文件不存在！"];
+        return;
+    }
+    
     //读取文件路径
     
     NSMutableArray* arr = [BianLiFileList BianLiPathList:path FileNamePanDuan:^BOOL(NSString *str) {
@@ -76,6 +83,12 @@
 
 //冲突控件前加cocos::
 -(void)start_cocos_namespace:(NSString*)path{
+    //检查路径
+    NSFileManager * fm = [NSFileManager defaultManager];
+    if ([fm fileExistsAtPath:path] == NO) {
+        [self log:@"输入路径错误或者文件不存在！"];
+        return;
+    }
     
     //获取文件路径数组
     NSMutableArray* arr = [BianLiFileList BianLiPathList:path FileNamePanDuan:^BOOL(NSString *str) {
