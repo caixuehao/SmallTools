@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC265FF21CAA65A500537C9F /* AppDelegate.m */; };
+		FC265FF61CAA65A500537C9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC265FF51CAA65A500537C9F /* main.m */; };
+		FC265FF91CAA65A500537C9F /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC265FF81CAA65A500537C9F /* mainViewController.m */; };
+		FC265FFB1CAA65A500537C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC265FFA1CAA65A500537C9F /* Assets.xcassets */; };
+		FC265FFE1CAA65A500537C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC265FFC1CAA65A500537C9F /* Main.storyboard */; };
+		FC2660091CAA65A500537C9F /* SmallToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2660081CAA65A500537C9F /* SmallToolsTests.m */; };
+		FC2660141CAA65A500537C9F /* SmallToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2660131CAA65A500537C9F /* SmallToolsUITests.m */; };
+		FC2660251CAA744D00537C9F /* rightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2660241CAA744D00537C9F /* rightViewController.m */; };
+		FC26602A1CAA76E500537C9F /* leftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2660291CAA76E500537C9F /* leftTableViewController.m */; };
+		FC2660301CAA84DE00537C9F /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC26602E1CAA84DE00537C9F /* TopViewController.m */; };
+		FC2660351CAA88EF00537C9F /* bottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2660341CAA88EF00537C9F /* bottomViewController.m */; };
+		FC2BE6C01CAB7FF7006310BD /* defaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6BE1CAB7FF7006310BD /* defaultViewController.m */; };
+		FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6BF1CAB7FF7006310BD /* defaultViewController.xib */; };
+		FC2BE6C51CAB837D006310BD /* json_nosjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6C31CAB837D006310BD /* json_nosjViewController.m */; };
+		FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6C41CAB837D006310BD /* json_nosjViewController.xib */; };
+		FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6CE1CABAB65006310BD /* nameSpaceBugViewController.m */; };
+		FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */; };
+		FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6D51CABC54D006310BD /* BianLiFileList.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC2660051CAA65A500537C9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC265FE61CAA65A500537C9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC265FED1CAA65A500537C9F;
+			remoteInfo = SmallTools;
+		};
+		FC2660101CAA65A500537C9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC265FE61CAA65A500537C9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC265FED1CAA65A500537C9F;
+			remoteInfo = SmallTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC265FEE1CAA65A500537C9F /* SmallTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC265FF11CAA65A500537C9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC265FF21CAA65A500537C9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC265FF51CAA65A500537C9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC265FF71CAA65A500537C9F /* mainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
+		FC265FF81CAA65A500537C9F /* mainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
+		FC265FFA1CAA65A500537C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC265FFD1CAA65A500537C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC265FFF1CAA65A500537C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2660041CAA65A500537C9F /* SmallToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2660081CAA65A500537C9F /* SmallToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallToolsTests.m; sourceTree = "<group>"; };
+		FC26600A1CAA65A500537C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC26600F1CAA65A500537C9F /* SmallToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2660131CAA65A500537C9F /* SmallToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallToolsUITests.m; sourceTree = "<group>"; };
+		FC2660151CAA65A500537C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2660211CAA6CB200537C9F /* smallToolsInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smallToolsInfo.h; sourceTree = "<group>"; };
+		FC2660231CAA744D00537C9F /* rightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rightViewController.h; sourceTree = "<group>"; };
+		FC2660241CAA744D00537C9F /* rightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightViewController.m; sourceTree = "<group>"; };
+		FC2660281CAA76E500537C9F /* leftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftTableViewController.h; sourceTree = "<group>"; };
+		FC2660291CAA76E500537C9F /* leftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftTableViewController.m; sourceTree = "<group>"; };
+		FC26602D1CAA84DE00537C9F /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		FC26602E1CAA84DE00537C9F /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		FC2660331CAA88EF00537C9F /* bottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bottomViewController.h; sourceTree = "<group>"; };
+		FC2660341CAA88EF00537C9F /* bottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bottomViewController.m; sourceTree = "<group>"; };
+		FC2BE6BD1CAB7FF7006310BD /* defaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultViewController.h; sourceTree = "<group>"; };
+		FC2BE6BE1CAB7FF7006310BD /* defaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = defaultViewController.m; sourceTree = "<group>"; };
+		FC2BE6BF1CAB7FF7006310BD /* defaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = defaultViewController.xib; sourceTree = "<group>"; };
+		FC2BE6C21CAB837D006310BD /* json_nosjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_nosjViewController.h; path = "工具实现代码/json_nosj转换/json_nosjViewController.h"; sourceTree = SOURCE_ROOT; };
+		FC2BE6C31CAB837D006310BD /* json_nosjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = json_nosjViewController.m; path = "工具实现代码/json_nosj转换/json_nosjViewController.m"; sourceTree = SOURCE_ROOT; };
+		FC2BE6C41CAB837D006310BD /* json_nosjViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = json_nosjViewController.xib; path = "工具实现代码/json_nosj转换/json_nosjViewController.xib"; sourceTree = SOURCE_ROOT; };
+		FC2BE6CD1CABAB65006310BD /* nameSpaceBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nameSpaceBugViewController.h; sourceTree = "<group>"; };
+		FC2BE6CE1CABAB65006310BD /* nameSpaceBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nameSpaceBugViewController.m; sourceTree = "<group>"; };
+		FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameSpaceBugViewController.xib; sourceTree = "<group>"; };
+		FC2BE6D41CABC54D006310BD /* BianLiFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianLiFileList.h; sourceTree = "<group>"; };
+		FC2BE6D51CABC54D006310BD /* BianLiFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianLiFileList.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC265FEB1CAA65A500537C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2660011CAA65A500537C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC26600C1CAA65A500537C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC265FE51CAA65A500537C9F = {
+			isa = PBXGroup;
+			children = (
+				FC265FF01CAA65A500537C9F /* SmallTools */,
+				FC2660071CAA65A500537C9F /* SmallToolsTests */,
+				FC2660121CAA65A500537C9F /* SmallToolsUITests */,
+				FC265FEF1CAA65A500537C9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC265FEF1CAA65A500537C9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC265FEE1CAA65A500537C9F /* SmallTools.app */,
+				FC2660041CAA65A500537C9F /* SmallToolsTests.xctest */,
+				FC26600F1CAA65A500537C9F /* SmallToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC265FF01CAA65A500537C9F /* SmallTools */ = {
+			isa = PBXGroup;
+			children = (
+				FC2660211CAA6CB200537C9F /* smallToolsInfo.h */,
+				FC265FFC1CAA65A500537C9F /* Main.storyboard */,
+				FC2BE6D21CABC54D006310BD /* 常用方法或类 */,
+				FC2660361CAA8A3100537C9F /* tools */,
+				FC2660261CAA766A00537C9F /* mainViewController */,
+				FC2660271CAA767900537C9F /* 主要的工程文件 */,
+				FC265FF41CAA65A500537C9F /* Supporting Files */,
+			);
+			path = SmallTools;
+			sourceTree = "<group>";
+		};
+		FC265FF41CAA65A500537C9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC265FF51CAA65A500537C9F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC2660071CAA65A500537C9F /* SmallToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC2660081CAA65A500537C9F /* SmallToolsTests.m */,
+				FC26600A1CAA65A500537C9F /* Info.plist */,
+			);
+			path = SmallToolsTests;
+			sourceTree = "<group>";
+		};
+		FC2660121CAA65A500537C9F /* SmallToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC2660131CAA65A500537C9F /* SmallToolsUITests.m */,
+				FC2660151CAA65A500537C9F /* Info.plist */,
+			);
+			path = SmallToolsUITests;
+			sourceTree = "<group>";
+		};
+		FC2660221CAA70B600537C9F /* rightViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC2660321CAA88E300537C9F /* bottomViewController */,
+				FC26602C1CAA7D5000537C9F /* TopViewController */,
+				FC2660231CAA744D00537C9F /* rightViewController.h */,
+				FC2660241CAA744D00537C9F /* rightViewController.m */,
+			);
+			name = rightViewController;
+			sourceTree = "<group>";
+		};
+		FC2660261CAA766A00537C9F /* mainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC265FF71CAA65A500537C9F /* mainViewController.h */,
+				FC265FF81CAA65A500537C9F /* mainViewController.m */,
+				FC26602B1CAA76EA00537C9F /* leftTableViewController */,
+				FC2660221CAA70B600537C9F /* rightViewController */,
+			);
+			name = mainViewController;
+			sourceTree = "<group>";
+		};
+		FC2660271CAA767900537C9F /* 主要的工程文件 */ = {
+			isa = PBXGroup;
+			children = (
+				FC265FF11CAA65A500537C9F /* AppDelegate.h */,
+				FC265FF21CAA65A500537C9F /* AppDelegate.m */,
+				FC265FFA1CAA65A500537C9F /* Assets.xcassets */,
+				FC265FFF1CAA65A500537C9F /* Info.plist */,
+			);
+			name = "主要的工程文件";
+			sourceTree = "<group>";
+		};
+		FC26602B1CAA76EA00537C9F /* leftTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC2660281CAA76E500537C9F /* leftTableViewController.h */,
+				FC2660291CAA76E500537C9F /* leftTableViewController.m */,
+			);
+			name = leftTableViewController;
+			sourceTree = "<group>";
+		};
+		FC26602C1CAA7D5000537C9F /* TopViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC26602D1CAA84DE00537C9F /* TopViewController.h */,
+				FC26602E1CAA84DE00537C9F /* TopViewController.m */,
+			);
+			name = TopViewController;
+			sourceTree = "<group>";
+		};
+		FC2660321CAA88E300537C9F /* bottomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BE6BC1CAB7FA1006310BD /* defaultViewController */,
+				FC2660331CAA88EF00537C9F /* bottomViewController.h */,
+				FC2660341CAA88EF00537C9F /* bottomViewController.m */,
+			);
+			name = bottomViewController;
+			sourceTree = "<group>";
+		};
+		FC2660361CAA8A3100537C9F /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BE6CC1CABAB65006310BD /* 命名空间bug */,
+				FC2660371CAA8A3D00537C9F /* json_nosj转换 */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		FC2660371CAA8A3D00537C9F /* json_nosj转换 */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BE6C21CAB837D006310BD /* json_nosjViewController.h */,
+				FC2BE6C31CAB837D006310BD /* json_nosjViewController.m */,
+				FC2BE6C41CAB837D006310BD /* json_nosjViewController.xib */,
+			);
+			name = "json_nosj转换";
+			sourceTree = "<group>";
+		};
+		FC2BE6BC1CAB7FA1006310BD /* defaultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BE6BD1CAB7FF7006310BD /* defaultViewController.h */,
+				FC2BE6BE1CAB7FF7006310BD /* defaultViewController.m */,
+				FC2BE6BF1CAB7FF7006310BD /* defaultViewController.xib */,
+			);
+			name = defaultViewController;
+			sourceTree = "<group>";
+		};
+		FC2BE6CC1CABAB65006310BD /* 命名空间bug */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BE6CD1CABAB65006310BD /* nameSpaceBugViewController.h */,
+				FC2BE6CE1CABAB65006310BD /* nameSpaceBugViewController.m */,
+				FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */,
+			);
+			name = "命名空间bug";
+			path = "工具实现代码/命名空间bug";
+			sourceTree = SOURCE_ROOT;
+		};
+		FC2BE6D21CABC54D006310BD /* 常用方法或类 */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BE6D31CABC54D006310BD /* 文件遍历 */,
+			);
+			path = "常用方法或类";
+			sourceTree = SOURCE_ROOT;
+		};
+		FC2BE6D31CABC54D006310BD /* 文件遍历 */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BE6D41CABC54D006310BD /* BianLiFileList.h */,
+				FC2BE6D51CABC54D006310BD /* BianLiFileList.m */,
+			);
+			path = "文件遍历";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC265FED1CAA65A500537C9F /* SmallTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2660181CAA65A500537C9F /* Build configuration list for PBXNativeTarget "SmallTools" */;
+			buildPhases = (
+				FC265FEA1CAA65A500537C9F /* Sources */,
+				FC265FEB1CAA65A500537C9F /* Frameworks */,
+				FC265FEC1CAA65A500537C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmallTools;
+			productName = SmallTools;
+			productReference = FC265FEE1CAA65A500537C9F /* SmallTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC2660031CAA65A500537C9F /* SmallToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC26601B1CAA65A500537C9F /* Build configuration list for PBXNativeTarget "SmallToolsTests" */;
+			buildPhases = (
+				FC2660001CAA65A500537C9F /* Sources */,
+				FC2660011CAA65A500537C9F /* Frameworks */,
+				FC2660021CAA65A500537C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC2660061CAA65A500537C9F /* PBXTargetDependency */,
+			);
+			name = SmallToolsTests;
+			productName = SmallToolsTests;
+			productReference = FC2660041CAA65A500537C9F /* SmallToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC26600E1CAA65A500537C9F /* SmallToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC26601E1CAA65A500537C9F /* Build configuration list for PBXNativeTarget "SmallToolsUITests" */;
+			buildPhases = (
+				FC26600B1CAA65A500537C9F /* Sources */,
+				FC26600C1CAA65A500537C9F /* Frameworks */,
+				FC26600D1CAA65A500537C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC2660111CAA65A500537C9F /* PBXTargetDependency */,
+			);
+			name = SmallToolsUITests;
+			productName = SmallToolsUITests;
+			productReference = FC26600F1CAA65A500537C9F /* SmallToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC265FE61CAA65A500537C9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = cxh;
+				TargetAttributes = {
+					FC265FED1CAA65A500537C9F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					FC2660031CAA65A500537C9F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FC265FED1CAA65A500537C9F;
+					};
+					FC26600E1CAA65A500537C9F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FC265FED1CAA65A500537C9F;
+					};
+				};
+			};
+			buildConfigurationList = FC265FE91CAA65A500537C9F /* Build configuration list for PBXProject "SmallTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC265FE51CAA65A500537C9F;
+			productRefGroup = FC265FEF1CAA65A500537C9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC265FED1CAA65A500537C9F /* SmallTools */,
+				FC2660031CAA65A500537C9F /* SmallToolsTests */,
+				FC26600E1CAA65A500537C9F /* SmallToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC265FEC1CAA65A500537C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC265FFB1CAA65A500537C9F /* Assets.xcassets in Resources */,
+				FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */,
+				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
+				FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */,
+				FC265FFE1CAA65A500537C9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2660021CAA65A500537C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC26600D1CAA65A500537C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC265FEA1CAA65A500537C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */,
+				FC2BE6C51CAB837D006310BD /* json_nosjViewController.m in Sources */,
+				FC2660351CAA88EF00537C9F /* bottomViewController.m in Sources */,
+				FC2BE6C01CAB7FF7006310BD /* defaultViewController.m in Sources */,
+				FC265FF91CAA65A500537C9F /* mainViewController.m in Sources */,
+				FC2660251CAA744D00537C9F /* rightViewController.m in Sources */,
+				FC2660301CAA84DE00537C9F /* TopViewController.m in Sources */,
+				FC26602A1CAA76E500537C9F /* leftTableViewController.m in Sources */,
+				FC265FF61CAA65A500537C9F /* main.m in Sources */,
+				FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */,
+				FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2660001CAA65A500537C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2660091CAA65A500537C9F /* SmallToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC26600B1CAA65A500537C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2660141CAA65A500537C9F /* SmallToolsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC2660061CAA65A500537C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC265FED1CAA65A500537C9F /* SmallTools */;
+			targetProxy = FC2660051CAA65A500537C9F /* PBXContainerItemProxy */;
+		};
+		FC2660111CAA65A500537C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC265FED1CAA65A500537C9F /* SmallTools */;
+			targetProxy = FC2660101CAA65A500537C9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC265FFC1CAA65A500537C9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC265FFD1CAA65A500537C9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC2660161CAA65A500537C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC2660171CAA65A500537C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC2660191CAA65A500537C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SmallTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.duole.login.SmallTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC26601A1CAA65A500537C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SmallTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.duole.login.SmallTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC26601C1CAA65A500537C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SmallToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.duole.login.SmallToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmallTools.app/Contents/MacOS/SmallTools";
+			};
+			name = Debug;
+		};
+		FC26601D1CAA65A500537C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SmallToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.duole.login.SmallToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmallTools.app/Contents/MacOS/SmallTools";
+			};
+			name = Release;
+		};
+		FC26601F1CAA65A500537C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SmallToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.duole.login.SmallToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmallTools;
+			};
+			name = Debug;
+		};
+		FC2660201CAA65A500537C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SmallToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.duole.login.SmallToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmallTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC265FE91CAA65A500537C9F /* Build configuration list for PBXProject "SmallTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2660161CAA65A500537C9F /* Debug */,
+				FC2660171CAA65A500537C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2660181CAA65A500537C9F /* Build configuration list for PBXNativeTarget "SmallTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2660191CAA65A500537C9F /* Debug */,
+				FC26601A1CAA65A500537C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC26601B1CAA65A500537C9F /* Build configuration list for PBXNativeTarget "SmallToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC26601C1CAA65A500537C9F /* Debug */,
+				FC26601D1CAA65A500537C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC26601E1CAA65A500537C9F /* Build configuration list for PBXNativeTarget "SmallToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC26601F1CAA65A500537C9F /* Debug */,
+				FC2660201CAA65A500537C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC265FE61CAA65A500537C9F /* Project object */;
+}
