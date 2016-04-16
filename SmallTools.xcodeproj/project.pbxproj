@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC11A8121CC24B590077A79E /* PlanbookViewController.m */; };
+		FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC11A8131CC24B590077A79E /* PlanbookViewController.xib */; };
 		FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC265FF21CAA65A500537C9F /* AppDelegate.m */; };
 		FC265FF61CAA65A500537C9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC265FF51CAA65A500537C9F /* main.m */; };
 		FC265FF91CAA65A500537C9F /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC265FF81CAA65A500537C9F /* mainViewController.m */; };
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC11A8111CC24B590077A79E /* PlanbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanbookViewController.h; sourceTree = "<group>"; };
+		FC11A8121CC24B590077A79E /* PlanbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanbookViewController.m; sourceTree = "<group>"; };
+		FC11A8131CC24B590077A79E /* PlanbookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanbookViewController.xib; sourceTree = "<group>"; };
 		FC265FEE1CAA65A500537C9F /* SmallTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC265FF11CAA65A500537C9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC265FF21CAA65A500537C9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC11A8101CC24B590077A79E /* 计划本 */ = {
+			isa = PBXGroup;
+			children = (
+				FC11A8111CC24B590077A79E /* PlanbookViewController.h */,
+				FC11A8121CC24B590077A79E /* PlanbookViewController.m */,
+				FC11A8131CC24B590077A79E /* PlanbookViewController.xib */,
+			);
+			name = "计划本";
+			path = "工具实现代码/计划本";
+			sourceTree = SOURCE_ROOT;
+		};
 		FC265FE51CAA65A500537C9F = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +247,7 @@
 		FC2660361CAA8A3100537C9F /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC11A8101CC24B590077A79E /* 计划本 */,
 				FC2BE6CC1CABAB65006310BD /* 命名空间bug */,
 				FC2660371CAA8A3D00537C9F /* json_nosj转换 */,
 			);
@@ -390,6 +407,7 @@
 			files = (
 				FC265FFB1CAA65A500537C9F /* Assets.xcassets in Resources */,
 				FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */,
+				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
 				FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */,
 				FC265FFE1CAA65A500537C9F /* Main.storyboard in Resources */,
@@ -425,6 +443,7 @@
 				FC2660251CAA744D00537C9F /* rightViewController.m in Sources */,
 				FC2660301CAA84DE00537C9F /* TopViewController.m in Sources */,
 				FC26602A1CAA76E500537C9F /* leftTableViewController.m in Sources */,
+				FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */,
 				FC265FF61CAA65A500537C9F /* main.m in Sources */,
 				FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */,
 				FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */,

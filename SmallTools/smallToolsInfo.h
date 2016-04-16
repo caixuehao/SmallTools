@@ -25,6 +25,7 @@
 //工具名称
 #define TOOLS_ARR @[@"json,nosj转换",\
                     @"命名空间批量处理",\
+                    @"计划本",\
                     @"记事本",\
                     @"整合"\
                     ]
@@ -32,6 +33,7 @@
 //工具附言
 #define TOOLS_PS_ARR @[@"json和nosj格式转换",\
                        @"命名空间批量处理，svn更新下来小精灵classes的bug。",\
+                       @"记录计划",\
                        @"记事本（有标签也懒得用，我觉得做出来了，我也不会用。）",\
                        @"就是这个程序框架"\
                       ]
@@ -39,6 +41,7 @@
 //工具开发状态(0还没做（或者懒得做了），1完成可用，2正在做)
 #define TOOLS_BUFF_ARR @[@1,\
                          @1,\
+                         @2,\
                          @0,\
                          @1\
                             ]
@@ -53,7 +56,8 @@
 #import "nameSpaceBugViewController.h"
 #define TOOL_CLASSES_NAME_1 nameSpaceBugViewController
 
-#define TOOL_CLASSES_NAME_2 defaultViewController
+#import "PlanbookViewController.h"
+#define TOOL_CLASSES_NAME_2 PlanbookViewController
 
 #define TOOL_CLASSES_NAME_3 defaultViewController
 

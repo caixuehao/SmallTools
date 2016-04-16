@@ -86,7 +86,7 @@
                         <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
-                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="vaU-34-NEW">
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="vaU-34-NEW">
                         <rect key="frame" x="349" y="1" width="15" height="154"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>

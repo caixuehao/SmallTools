@@ -17,5 +17,69 @@
             endingLineNumber = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x5177;&#x5b9e;&#x73b0;&#x4ee3;&#x7801;/&#x547d;&#x540d;&#x7a7a;&#x95f4;bug/nameSpaceBugViewController.m"
+            timestampString = "481101029.754115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-btn2:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x5177;&#x5b9e;&#x73b0;&#x4ee3;&#x7801;/&#x547d;&#x540d;&#x7a7a;&#x95f4;bug/nameSpaceBugViewController.m"
+            timestampString = "481101160.933277"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-start_cocos_namespace:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5de5;&#x5177;&#x5b9e;&#x73b0;&#x4ee3;&#x7801;/&#x547d;&#x540d;&#x7a7a;&#x95f4;bug/nameSpaceBugViewController.m"
+            timestampString = "481101298.760463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-start_cocos_namespace:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5e38;&#x7528;&#x65b9;&#x6cd5;&#x6216;&#x7c7b;/&#x6587;&#x4ef6;&#x904d;&#x5386;/BianLiFileList.m"
+            timestampString = "481101344.633647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "+BianLiPathList:FileNamePanDuan:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
