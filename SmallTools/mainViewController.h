@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+
 @interface mainViewController : NSSplitViewController
 
 
 @end
 
+//mainViewController* mainVC;

@@ -27,6 +27,8 @@
 		FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6CE1CABAB65006310BD /* nameSpaceBugViewController.m */; };
 		FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */; };
 		FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6D51CABC54D006310BD /* BianLiFileList.m */; };
+		FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */; };
+		FC8598111CE17DE300EADBB5 /* zhijie1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8598101CE17DE300EADBB5 /* zhijie1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 		FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameSpaceBugViewController.xib; sourceTree = "<group>"; };
 		FC2BE6D41CABC54D006310BD /* BianLiFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianLiFileList.h; sourceTree = "<group>"; };
 		FC2BE6D51CABC54D006310BD /* BianLiFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianLiFileList.m; sourceTree = "<group>"; };
+		FC80EF281CE2C48B00935EF8 /* DataReadWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataReadWrite.h; path = "文件读写/DataReadWrite.h"; sourceTree = "<group>"; };
+		FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataReadWrite.m; path = "文件读写/DataReadWrite.m"; sourceTree = "<group>"; };
+		FC8598101CE17DE300EADBB5 /* zhijie1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zhijie1.png; path = "../../../Documents/图片/其它/小按钮/zhijie1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +151,7 @@
 		FC265FF01CAA65A500537C9F /* SmallTools */ = {
 			isa = PBXGroup;
 			children = (
+				FC8598101CE17DE300EADBB5 /* zhijie1.png */,
 				FC2660211CAA6CB200537C9F /* smallToolsInfo.h */,
 				FC265FFC1CAA65A500537C9F /* Main.storyboard */,
 				FC2BE6D21CABC54D006310BD /* 常用方法或类 */,
@@ -288,6 +294,7 @@
 		FC2BE6D21CABC54D006310BD /* 常用方法或类 */ = {
 			isa = PBXGroup;
 			children = (
+				FC80EF271CE2C43900935EF8 /* 数据保存 */,
 				FC2BE6D31CABC54D006310BD /* 文件遍历 */,
 			);
 			path = "常用方法或类";
@@ -300,6 +307,15 @@
 				FC2BE6D51CABC54D006310BD /* BianLiFileList.m */,
 			);
 			path = "文件遍历";
+			sourceTree = "<group>";
+		};
+		FC80EF271CE2C43900935EF8 /* 数据保存 */ = {
+			isa = PBXGroup;
+			children = (
+				FC80EF281CE2C48B00935EF8 /* DataReadWrite.h */,
+				FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */,
+			);
+			name = "数据保存";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +427,7 @@
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
 				FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */,
 				FC265FFE1CAA65A500537C9F /* Main.storyboard in Resources */,
+				FC8598111CE17DE300EADBB5 /* zhijie1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */,
 				FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */,
 				FC2BE6C51CAB837D006310BD /* json_nosjViewController.m in Sources */,
 				FC2660351CAA88EF00537C9F /* bottomViewController.m in Sources */,

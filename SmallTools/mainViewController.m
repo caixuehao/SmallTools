@@ -23,14 +23,21 @@
     NSSplitViewItem* item2 = self.splitViewItems[1];
     item2.minimumThickness = rightViewController_MinWidth;
     item2.maximumThickness = rightViewController_MaxWidth;
-    
-    
+//    mainVC = self;
+//     [[NSApp dockTile] setBadgeLabel:@"test"];
+//    
+//      [NSApp setApplicationIconImage:[NSImage imageNamed:@"zhijie1"]];
+  
+
 }
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+-(void)dealloc{
+    NSLog(@"mainVC dealloc");
 }
 
 @end

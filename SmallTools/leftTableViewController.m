@@ -8,6 +8,7 @@
 
 #import "leftTableViewController.h"
 #import "smallToolsInfo.h"
+#import "DataReadWrite.h"
 
 @interface leftTableViewController ()
 
@@ -44,6 +45,10 @@
     [tableContainer setHasVerticalScroller:YES];
     
     [self.view addSubview:tableContainer];
+    
+
+ 
+
 }
 
 
@@ -98,6 +103,7 @@
 -( void )tableView:( NSTableView *)tableView setObjectValue:( id )object forTableColumn:( NSTableColumn *)tableColumn row:( NSInteger )row
 {
     NSLog(@"%@",tools_arr[row]);
+    [DataReadWrite setValue:@(row) Key:@"leftTableVC_row"];
     //创建通知并发送
     NSDictionary* dic = @{@"row":@(row)};
     //创建通知

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+//#import "mainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +17,20 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+   
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    
 }
-
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication
+                    hasVisibleWindows:(BOOL)flag{
+    if (!flag){
+        //主窗口显示
+        [NSApp activateIgnoringOtherApps:NO];
+        [[NSApp mainWindow] makeKeyAndOrderFront:self];
+    }
+    return YES;
+}
 @end

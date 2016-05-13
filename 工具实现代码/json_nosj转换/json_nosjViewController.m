@@ -24,6 +24,9 @@
     
     [_logTextView setEditable:NO];//设置不可编写
     [self log:@"Hello World!"];
+//    NSString* str = @"fate 二次元 好运娱乐 萌化 皇室战争 传奇 nice 王者荣耀 小说 动漫 动作 游戏 百度贴吧 app 漫画 装逼神器 娘化 秀场 天使幻想 卡牌 手游 武神 无尽的纷争 挂机 回合 策略";
+//    str = [str stringByReplacingOccurrencesOfString:@" " withString:@","];
+//    NSLog(@"%@",str);
 }
 
 

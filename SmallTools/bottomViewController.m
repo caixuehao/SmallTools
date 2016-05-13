@@ -8,6 +8,7 @@
 
 #import "bottomViewController.h"
 #import "smallToolsInfo.h"
+#import "DataReadWrite.h"
 
 @interface bottomViewController ()
 
@@ -82,6 +83,20 @@
     [self.view addSubview:oldVC.view];
     //注册通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeTool:) name:@"changeTool" object:nil];
+    
+    if ([DataReadWrite objectForKey:@"leftTableVC_row"]) {
+        int row =  [[DataReadWrite objectForKey:@"leftTableVC_row"] intValue];
+        NSLog(@"%d",row);
+        
+        NSViewController* newVC = VC_arr[row];
+        //    [self presentViewControllerAsSheet:jj];//从上向下弹出
+        //    [self presentViewControllerAsModalWindow:jj];//模态弹出
+        //切换视图
+        [self transitionFromViewController:oldVC toViewController:newVC options:NSViewControllerTransitionNone completionHandler:^{
+        }];
+        oldVC = newVC;
+        
+    }
 }
 
 - (void)changeTool:(NSNotification *)text{

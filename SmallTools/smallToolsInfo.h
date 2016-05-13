@@ -8,6 +8,11 @@
 
 #ifndef smallToolsInfo_h
 #define smallToolsInfo_h
+
+//文件存储地址
+#define Main_Path @"CXH"
+
+
 //解决窗口拉伸问题后再设置可变吧
 #define leftTableViewController_MinWidth 200
 #define leftTableViewController_MaxWidth 200
@@ -41,7 +46,7 @@
 //工具开发状态(0还没做（或者懒得做了），1完成可用，2正在做)
 #define TOOLS_BUFF_ARR @[@1,\
                          @1,\
-                         @2,\
+                         @1,\
                          @0,\
                          @1\
                             ]
