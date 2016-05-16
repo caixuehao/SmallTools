@@ -81,9 +81,11 @@
     _point.x = _popUpButtonCell.indexOfSelectedItem;
     _point.y = [arr count];
     [arr addObject:dic];
+    [_main_dic setObject:arr forKey:[NSString stringWithFormat:@"%lu",_popUpButtonCell.indexOfSelectedItem]];
     //刷新保存
     [_tableView reloadData];
     [self dataWrite];
+    [self dataInit];
     
 }
 
@@ -114,6 +116,7 @@
     //刷新保存
     [_tableView reloadData];
     [self dataWrite];
+    [self dataInit];
 }
 
 
@@ -128,6 +131,7 @@
     //刷新保存
     [_tableView reloadData];
     [self dataWrite];
+    [self dataInit];
     //刷新选择元素的数据
     _point.x = -1;
     _titleTF.stringValue = @"";
