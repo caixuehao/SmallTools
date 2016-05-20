@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0ADFCC1CEC79210027780E /* DragDropView.m */; };
 		FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC11A8121CC24B590077A79E /* PlanbookViewController.m */; };
 		FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC11A8131CC24B590077A79E /* PlanbookViewController.xib */; };
 		FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC265FF21CAA65A500537C9F /* AppDelegate.m */; };
@@ -28,7 +29,10 @@
 		FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */; };
 		FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6D51CABC54D006310BD /* BianLiFileList.m */; };
 		FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */; };
-		FC8598111CE17DE300EADBB5 /* zhijie1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8598101CE17DE300EADBB5 /* zhijie1.png */; };
+		FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9F87C11CEC208B007C9727 /* appIconViewController.m */; };
+		FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9F87C21CEC208B007C9727 /* appIconViewController.xib */; };
+		FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */; };
+		FCE6504F1CEEE73A00D3DEFA /* 模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0ADFCB1CEC79210027780E /* DragDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropView.h; sourceTree = "<group>"; };
+		FC0ADFCC1CEC79210027780E /* DragDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropView.m; sourceTree = "<group>"; };
 		FC11A8111CC24B590077A79E /* PlanbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanbookViewController.h; sourceTree = "<group>"; };
 		FC11A8121CC24B590077A79E /* PlanbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanbookViewController.m; sourceTree = "<group>"; };
 		FC11A8131CC24B590077A79E /* PlanbookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanbookViewController.xib; sourceTree = "<group>"; };
@@ -89,7 +95,11 @@
 		FC2BE6D51CABC54D006310BD /* BianLiFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianLiFileList.m; sourceTree = "<group>"; };
 		FC80EF281CE2C48B00935EF8 /* DataReadWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataReadWrite.h; path = "文件读写/DataReadWrite.h"; sourceTree = "<group>"; };
 		FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataReadWrite.m; path = "文件读写/DataReadWrite.m"; sourceTree = "<group>"; };
-		FC8598101CE17DE300EADBB5 /* zhijie1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zhijie1.png; path = "../../../Documents/图片/其它/小按钮/zhijie1.png"; sourceTree = "<group>"; };
+		FC9F87C01CEC208B007C9727 /* appIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appIconViewController.h; path = "工具实现代码/应用图标/appIconViewController.h"; sourceTree = SOURCE_ROOT; };
+		FC9F87C11CEC208B007C9727 /* appIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = appIconViewController.m; path = "工具实现代码/应用图标/appIconViewController.m"; sourceTree = SOURCE_ROOT; };
+		FC9F87C21CEC208B007C9727 /* appIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = appIconViewController.xib; path = "工具实现代码/应用图标/appIconViewController.xib"; sourceTree = SOURCE_ROOT; };
+		FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100-100.jpg"; sourceTree = "<group>"; };
+		FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "模版Contents.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0ADFCA1CEC79210027780E /* 文件拖放接收视图 */ = {
+			isa = PBXGroup;
+			children = (
+				FC0ADFCB1CEC79210027780E /* DragDropView.h */,
+				FC0ADFCC1CEC79210027780E /* DragDropView.m */,
+			);
+			path = "文件拖放接收视图";
+			sourceTree = "<group>";
+		};
 		FC11A8101CC24B590077A79E /* 计划本 */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,9 +170,9 @@
 		FC265FF01CAA65A500537C9F /* SmallTools */ = {
 			isa = PBXGroup;
 			children = (
-				FC8598101CE17DE300EADBB5 /* zhijie1.png */,
 				FC2660211CAA6CB200537C9F /* smallToolsInfo.h */,
 				FC265FFC1CAA65A500537C9F /* Main.storyboard */,
+				FCBE64291CED6EBE00CB31E5 /* 资源 */,
 				FC2BE6D21CABC54D006310BD /* 常用方法或类 */,
 				FC2660361CAA8A3100537C9F /* tools */,
 				FC2660261CAA766A00537C9F /* mainViewController */,
@@ -253,6 +272,7 @@
 		FC2660361CAA8A3100537C9F /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC9F87BF1CEC1FF3007C9727 /* app icon */,
 				FC11A8101CC24B590077A79E /* 计划本 */,
 				FC2BE6CC1CABAB65006310BD /* 命名空间bug */,
 				FC2660371CAA8A3D00537C9F /* json_nosj转换 */,
@@ -294,6 +314,7 @@
 		FC2BE6D21CABC54D006310BD /* 常用方法或类 */ = {
 			isa = PBXGroup;
 			children = (
+				FC0ADFCA1CEC79210027780E /* 文件拖放接收视图 */,
 				FC80EF271CE2C43900935EF8 /* 数据保存 */,
 				FC2BE6D31CABC54D006310BD /* 文件遍历 */,
 			);
@@ -317,6 +338,25 @@
 			);
 			name = "数据保存";
 			sourceTree = "<group>";
+		};
+		FC9F87BF1CEC1FF3007C9727 /* app icon */ = {
+			isa = PBXGroup;
+			children = (
+				FC9F87C01CEC208B007C9727 /* appIconViewController.h */,
+				FC9F87C11CEC208B007C9727 /* appIconViewController.m */,
+				FC9F87C21CEC208B007C9727 /* appIconViewController.xib */,
+			);
+			name = "app icon";
+			sourceTree = "<group>";
+		};
+		FCBE64291CED6EBE00CB31E5 /* 资源 */ = {
+			isa = PBXGroup;
+			children = (
+				FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */,
+				FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */,
+			);
+			path = "资源";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -422,12 +462,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC265FFB1CAA65A500537C9F /* Assets.xcassets in Resources */,
+				FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */,
+				FCE6504F1CEEE73A00D3DEFA /* 模版Contents.json in Resources */,
 				FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */,
 				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
+				FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
 				FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */,
 				FC265FFE1CAA65A500537C9F /* Main.storyboard in Resources */,
-				FC8598111CE17DE300EADBB5 /* zhijie1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +507,8 @@
 				FC265FF61CAA65A500537C9F /* main.m in Sources */,
 				FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */,
 				FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */,
+				FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */,
+				FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,20 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x5de5;&#x5177;&#x5b9e;&#x73b0;&#x4ee3;&#x7801;/json_nosj&#x8f6c;&#x6362;/json_nosjViewController.h"
-            timestampString = "481002589.727711"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "&#x5de5;&#x5177;&#x5b9e;&#x73b0;&#x4ee3;&#x7801;/&#x547d;&#x540d;&#x7a7a;&#x95f4;bug/nameSpaceBugViewController.m"
             timestampString = "481101029.754115"
             startingColumnNumber = "9223372036854775807"

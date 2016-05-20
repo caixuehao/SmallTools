@@ -31,6 +31,7 @@
 #define TOOLS_ARR @[@"json,nosj转换",\
                     @"命名空间批量处理",\
                     @"计划本",\
+                    @"应用图标整理",\
                     @"记事本",\
                     @"整合"\
                     ]
@@ -39,12 +40,14 @@
 #define TOOLS_PS_ARR @[@"json和nosj格式转换",\
                        @"命名空间批量处理，svn更新下来小精灵classes的bug。",\
                        @"记录计划",\
+                       @"应用图标整理，先做整理，弄好了再做生成图片的。先支持png的吧，其他的也可以弄，不过感觉没啥必要.网上说png的最好。",\
                        @"记事本（有标签也懒得用，我觉得做出来了，我也不会用。）",\
                        @"就是这个程序框架"\
                       ]
 
 //工具开发状态(0还没做（或者懒得做了），1完成可用，2正在做)
 #define TOOLS_BUFF_ARR @[@1,\
+                         @1,\
                          @1,\
                          @1,\
                          @0,\
@@ -64,7 +67,8 @@
 #import "PlanbookViewController.h"
 #define TOOL_CLASSES_NAME_2 PlanbookViewController
 
-#define TOOL_CLASSES_NAME_3 defaultViewController
+#import "appIconViewController.h"
+#define TOOL_CLASSES_NAME_3 appIconViewController
 
 #define TOOL_CLASSES_NAME_4 defaultViewController
 

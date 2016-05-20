@@ -77,11 +77,13 @@
     [dic setObject:[_desTV string] forKey:@"des"];
     //添加
     arr = [_main_dic objectForKey:[NSString stringWithFormat:@"%lu",_popUpButtonCell.indexOfSelectedItem]];
+    if(arr == nil)arr = [[NSMutableArray alloc] init];
     //刷新选择元素的数据
     _point.x = _popUpButtonCell.indexOfSelectedItem;
     _point.y = [arr count];
     [arr addObject:dic];
     [_main_dic setObject:arr forKey:[NSString stringWithFormat:@"%lu",_popUpButtonCell.indexOfSelectedItem]];
+    
     //刷新保存
     [_tableView reloadData];
     [self dataWrite];
