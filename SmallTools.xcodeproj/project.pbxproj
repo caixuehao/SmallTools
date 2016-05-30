@@ -29,10 +29,13 @@
 		FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */; };
 		FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6D51CABC54D006310BD /* BianLiFileList.m */; };
 		FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */; };
+		FC99B96F1CFC1CAA001D3F99 /* mainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99B96E1CFC1CAA001D3F99 /* mainWindowController.m */; };
 		FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9F87C11CEC208B007C9727 /* appIconViewController.m */; };
 		FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9F87C21CEC208B007C9727 /* appIconViewController.xib */; };
 		FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */; };
 		FCE6504F1CEEE73A00D3DEFA /* 模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */; };
+		FCE8B74F1CF849F700B3BFD2 /* testVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE8B74D1CF849F700B3BFD2 /* testVC.m */; };
+		FCE8B7501CF849F700B3BFD2 /* testVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE8B74E1CF849F700B3BFD2 /* testVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,11 +98,16 @@
 		FC2BE6D51CABC54D006310BD /* BianLiFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianLiFileList.m; sourceTree = "<group>"; };
 		FC80EF281CE2C48B00935EF8 /* DataReadWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataReadWrite.h; path = "文件读写/DataReadWrite.h"; sourceTree = "<group>"; };
 		FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataReadWrite.m; path = "文件读写/DataReadWrite.m"; sourceTree = "<group>"; };
+		FC99B96D1CFC1CAA001D3F99 /* mainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainWindowController.h; sourceTree = "<group>"; };
+		FC99B96E1CFC1CAA001D3F99 /* mainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainWindowController.m; sourceTree = "<group>"; };
 		FC9F87C01CEC208B007C9727 /* appIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appIconViewController.h; path = "工具实现代码/应用图标/appIconViewController.h"; sourceTree = SOURCE_ROOT; };
 		FC9F87C11CEC208B007C9727 /* appIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = appIconViewController.m; path = "工具实现代码/应用图标/appIconViewController.m"; sourceTree = SOURCE_ROOT; };
 		FC9F87C21CEC208B007C9727 /* appIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = appIconViewController.xib; path = "工具实现代码/应用图标/appIconViewController.xib"; sourceTree = SOURCE_ROOT; };
 		FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100-100.jpg"; sourceTree = "<group>"; };
 		FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "模版Contents.json"; sourceTree = "<group>"; };
+		FCE8B74C1CF849F700B3BFD2 /* testVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testVC.h; sourceTree = "<group>"; };
+		FCE8B74D1CF849F700B3BFD2 /* testVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testVC.m; sourceTree = "<group>"; };
+		FCE8B74E1CF849F700B3BFD2 /* testVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +230,8 @@
 		FC2660261CAA766A00537C9F /* mainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FC99B96D1CFC1CAA001D3F99 /* mainWindowController.h */,
+				FC99B96E1CFC1CAA001D3F99 /* mainWindowController.m */,
 				FC265FF71CAA65A500537C9F /* mainViewController.h */,
 				FC265FF81CAA65A500537C9F /* mainViewController.m */,
 				FC26602B1CAA76EA00537C9F /* leftTableViewController */,
@@ -272,6 +282,7 @@
 		FC2660361CAA8A3100537C9F /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				FCE8B74B1CF849F700B3BFD2 /* 测试视图 */,
 				FC9F87BF1CEC1FF3007C9727 /* app icon */,
 				FC11A8101CC24B590077A79E /* 计划本 */,
 				FC2BE6CC1CABAB65006310BD /* 命名空间bug */,
@@ -356,6 +367,17 @@
 				FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */,
 			);
 			path = "资源";
+			sourceTree = SOURCE_ROOT;
+		};
+		FCE8B74B1CF849F700B3BFD2 /* 测试视图 */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8B74C1CF849F700B3BFD2 /* testVC.h */,
+				FCE8B74D1CF849F700B3BFD2 /* testVC.m */,
+				FCE8B74E1CF849F700B3BFD2 /* testVC.xib */,
+			);
+			name = "测试视图";
+			path = "工具实现代码/测试视图";
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -469,6 +491,7 @@
 				FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
 				FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */,
+				FCE8B7501CF849F700B3BFD2 /* testVC.xib in Resources */,
 				FC265FFE1CAA65A500537C9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +521,7 @@
 				FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */,
 				FC2BE6C51CAB837D006310BD /* json_nosjViewController.m in Sources */,
 				FC2660351CAA88EF00537C9F /* bottomViewController.m in Sources */,
+				FC99B96F1CFC1CAA001D3F99 /* mainWindowController.m in Sources */,
 				FC2BE6C01CAB7FF7006310BD /* defaultViewController.m in Sources */,
 				FC265FF91CAA65A500537C9F /* mainViewController.m in Sources */,
 				FC2660251CAA744D00537C9F /* rightViewController.m in Sources */,
@@ -506,6 +530,7 @@
 				FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */,
 				FC265FF61CAA65A500537C9F /* main.m in Sources */,
 				FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */,
+				FCE8B74F1CF849F700B3BFD2 /* testVC.m in Sources */,
 				FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */,
 				FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */,
 				FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */,

@@ -81,7 +81,7 @@
     //刷新选择元素的数据
     _point.x = _popUpButtonCell.indexOfSelectedItem;
     _point.y = [arr count];
-    [arr addObject:dic];
+     [arr insertObject:dic atIndex:0];
     [_main_dic setObject:arr forKey:[NSString stringWithFormat:@"%lu",_popUpButtonCell.indexOfSelectedItem]];
     
     //刷新保存
@@ -113,7 +113,7 @@
     _point.x = _popUpButtonCell.indexOfSelectedItem;
     _point.y = [arr count];
     
-    [arr addObject:dic];
+    [arr insertObject:dic atIndex:0];
     [_main_dic setObject:arr forKey:[NSString stringWithFormat:@"%lu",_popUpButtonCell.indexOfSelectedItem]];
     //刷新保存
     [_tableView reloadData];

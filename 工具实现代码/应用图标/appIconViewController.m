@@ -298,6 +298,8 @@
             if(f<180){
                 [_btn1 setTitle:@"至少得有个180的图标吧"];
                 [self log:@"至少得有个180的图标吧,要不无法合成一些尺寸的图标"];
+                NSAlert *alert = [NSAlert alertWithMessageText:@"图片太小" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"至少得有个180的图标吧,要不无法合成一些尺寸的图标"];
+                [alert runModal];
                 [_ddv1.layer setBackgroundColor:[[NSColor orangeColor] CGColor]];
             }else{
                 [_btn1 setTitle:@""];

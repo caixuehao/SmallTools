@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-//#import "mainViewController.h"
+#import "mainWindowController.h"
 
 @interface AppDelegate ()
 
@@ -24,13 +24,17 @@
     // Insert code here to tear down your application
     
 }
+
+//点击重新打开主窗口
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication
                     hasVisibleWindows:(BOOL)flag{
     if (!flag){
         //主窗口显示
         [NSApp activateIgnoringOtherApps:NO];
-        [[NSApp mainWindow] makeKeyAndOrderFront:self];
+        [[mainWindowController getMainWindow] makeKeyAndOrderFront:self];
     }
     return YES;
 }
+
+
 @end
