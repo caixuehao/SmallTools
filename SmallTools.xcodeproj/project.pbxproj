@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC05A0F51D12A74B005FBD27 /* samllTools1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC05A0F31D12A74B005FBD27 /* samllTools1ViewController.m */; };
+		FC05A0F61D12A74B005FBD27 /* samllTools1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC05A0F41D12A74B005FBD27 /* samllTools1ViewController.xib */; };
+		FC05A0F81D12A834005FBD27 /* zuo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC05A0F71D12A834005FBD27 /* zuo.png */; };
 		FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0ADFCC1CEC79210027780E /* DragDropView.m */; };
 		FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC11A8121CC24B590077A79E /* PlanbookViewController.m */; };
 		FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC11A8131CC24B590077A79E /* PlanbookViewController.xib */; };
@@ -56,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC05A0F21D12A74B005FBD27 /* samllTools1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samllTools1ViewController.h; sourceTree = "<group>"; };
+		FC05A0F31D12A74B005FBD27 /* samllTools1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = samllTools1ViewController.m; sourceTree = "<group>"; };
+		FC05A0F41D12A74B005FBD27 /* samllTools1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = samllTools1ViewController.xib; sourceTree = "<group>"; };
+		FC05A0F71D12A834005FBD27 /* zuo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuo.png; sourceTree = "<group>"; };
 		FC0ADFCB1CEC79210027780E /* DragDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropView.h; sourceTree = "<group>"; };
 		FC0ADFCC1CEC79210027780E /* DragDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropView.m; sourceTree = "<group>"; };
 		FC11A8111CC24B590077A79E /* PlanbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanbookViewController.h; sourceTree = "<group>"; };
@@ -135,6 +142,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC05A0EC1D12A68C005FBD27 /* 一些小工具 */ = {
+			isa = PBXGroup;
+			children = (
+				FC05A0F21D12A74B005FBD27 /* samllTools1ViewController.h */,
+				FC05A0F31D12A74B005FBD27 /* samllTools1ViewController.m */,
+				FC05A0F41D12A74B005FBD27 /* samllTools1ViewController.xib */,
+			);
+			name = "一些小工具";
+			sourceTree = "<group>";
+		};
 		FC0ADFCA1CEC79210027780E /* 文件拖放接收视图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +299,7 @@
 		FC2660361CAA8A3100537C9F /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC05A0EC1D12A68C005FBD27 /* 一些小工具 */,
 				FCE8B74B1CF849F700B3BFD2 /* 测试视图 */,
 				FC9F87BF1CEC1FF3007C9727 /* app icon */,
 				FC11A8101CC24B590077A79E /* 计划本 */,
@@ -363,6 +381,7 @@
 		FCBE64291CED6EBE00CB31E5 /* 资源 */ = {
 			isa = PBXGroup;
 			children = (
+				FC05A0F71D12A834005FBD27 /* zuo.png */,
 				FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */,
 				FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */,
 			);
@@ -488,6 +507,8 @@
 				FCE6504F1CEEE73A00D3DEFA /* 模版Contents.json in Resources */,
 				FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */,
 				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
+				FC05A0F81D12A834005FBD27 /* zuo.png in Resources */,
+				FC05A0F61D12A74B005FBD27 /* samllTools1ViewController.xib in Resources */,
 				FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
 				FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */,
@@ -527,6 +548,7 @@
 				FC2660251CAA744D00537C9F /* rightViewController.m in Sources */,
 				FC2660301CAA84DE00537C9F /* TopViewController.m in Sources */,
 				FC26602A1CAA76E500537C9F /* leftTableViewController.m in Sources */,
+				FC05A0F51D12A74B005FBD27 /* samllTools1ViewController.m in Sources */,
 				FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */,
 				FC265FF61CAA65A500537C9F /* main.m in Sources */,
 				FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */,
