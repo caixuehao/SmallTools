@@ -33,7 +33,8 @@
                     @"计划本",\
                     @"应用图标整理",\
                     @"记事本",\
-                    @"小工具",\
+                    @"小工具1",\
+                    @"小工具2",\
                     @"整合"\
                     ]
 
@@ -43,7 +44,8 @@
                        @"记录计划",\
                        @"先支持png的吧，其他的格式也可以弄（比较简单），不过感觉没啥必要.网上说png的最好。",\
                        @"记事本（有标签也懒得用，我觉得做出来了，我也不会用。）",\
-                       @"小工具",\
+                       @"小工具1",\
+                       @"小工具2",\
                        @"就是这个程序框架"\
                       ]
 
@@ -53,6 +55,7 @@
                          @1,\
                          @1,\
                          @0,\
+                         @1,\
                          @1,\
                          @1\
                             ]
@@ -79,7 +82,8 @@
 #import "samllTools1ViewController.h"
 #define TOOL_CLASSES_NAME_5 samllTools1ViewController
 
-#define TOOL_CLASSES_NAME_6 defaultViewController
+#import "samllTools2ViewController.h"
+#define TOOL_CLASSES_NAME_6 samllTools2ViewController
 
 #define TOOL_CLASSES_NAME_7 defaultViewController
 

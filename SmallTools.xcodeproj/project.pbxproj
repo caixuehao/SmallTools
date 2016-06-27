@@ -39,6 +39,8 @@
 		FCE6504F1CEEE73A00D3DEFA /* 模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */; };
 		FCE8B74F1CF849F700B3BFD2 /* testVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE8B74D1CF849F700B3BFD2 /* testVC.m */; };
 		FCE8B7501CF849F700B3BFD2 /* testVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE8B74E1CF849F700B3BFD2 /* testVC.xib */; };
+		FCFD417F1D13DDD000D334A3 /* samllTools2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFD417D1D13DDD000D334A3 /* samllTools2ViewController.m */; };
+		FCFD41801D13DDD000D334A3 /* samllTools2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFD417E1D13DDD000D334A3 /* samllTools2ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,9 @@
 		FCE8B74C1CF849F700B3BFD2 /* testVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testVC.h; sourceTree = "<group>"; };
 		FCE8B74D1CF849F700B3BFD2 /* testVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testVC.m; sourceTree = "<group>"; };
 		FCE8B74E1CF849F700B3BFD2 /* testVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testVC.xib; sourceTree = "<group>"; };
+		FCFD417C1D13DDD000D334A3 /* samllTools2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samllTools2ViewController.h; sourceTree = "<group>"; };
+		FCFD417D1D13DDD000D334A3 /* samllTools2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = samllTools2ViewController.m; sourceTree = "<group>"; };
+		FCFD417E1D13DDD000D334A3 /* samllTools2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = samllTools2ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,9 @@
 				FC05A0F21D12A74B005FBD27 /* samllTools1ViewController.h */,
 				FC05A0F31D12A74B005FBD27 /* samllTools1ViewController.m */,
 				FC05A0F41D12A74B005FBD27 /* samllTools1ViewController.xib */,
+				FCFD417C1D13DDD000D334A3 /* samllTools2ViewController.h */,
+				FCFD417D1D13DDD000D334A3 /* samllTools2ViewController.m */,
+				FCFD417E1D13DDD000D334A3 /* samllTools2ViewController.xib */,
 			);
 			name = "一些小工具";
 			sourceTree = "<group>";
@@ -508,6 +516,7 @@
 				FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */,
 				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
 				FC05A0F81D12A834005FBD27 /* zuo.png in Resources */,
+				FCFD41801D13DDD000D334A3 /* samllTools2ViewController.xib in Resources */,
 				FC05A0F61D12A74B005FBD27 /* samllTools1ViewController.xib in Resources */,
 				FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
@@ -556,6 +565,7 @@
 				FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */,
 				FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */,
 				FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */,
+				FCFD417F1D13DDD000D334A3 /* samllTools2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
