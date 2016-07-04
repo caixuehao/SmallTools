@@ -35,6 +35,7 @@
                     @"记事本",\
                     @"小工具1",\
                     @"小工具2",\
+                    @"b站视频下载",\
                     @"整合"\
                     ]
 
@@ -46,6 +47,7 @@
                        @"记事本（有标签也懒得用，我觉得做出来了，我也不会用。）",\
                        @"小工具1",\
                        @"小工具2",\
+                       @"b站视频下载",\
                        @"就是这个程序框架"\
                       ]
 
@@ -55,6 +57,7 @@
                          @1,\
                          @1,\
                          @0,\
+                         @1,\
                          @1,\
                          @1,\
                          @1\
@@ -85,7 +88,8 @@
 #import "samllTools2ViewController.h"
 #define TOOL_CLASSES_NAME_6 samllTools2ViewController
 
-#define TOOL_CLASSES_NAME_7 defaultViewController
+#import "bilibiliVideoDownload.h"
+#define TOOL_CLASSES_NAME_7 bilibiliVideoDownload
 
 #define TOOL_CLASSES_NAME_8 defaultViewController
 

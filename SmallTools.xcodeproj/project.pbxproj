@@ -31,6 +31,10 @@
 		FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6CE1CABAB65006310BD /* nameSpaceBugViewController.m */; };
 		FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */; };
 		FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6D51CABC54D006310BD /* BianLiFileList.m */; };
+		FC7D8BD11D29F8470009EF7F /* bilibiliVideoDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7D8BCF1D29F8470009EF7F /* bilibiliVideoDownload.m */; };
+		FC7D8BD21D29F8470009EF7F /* bilibiliVideoDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7D8BD01D29F8470009EF7F /* bilibiliVideoDownload.xib */; };
+		FC7D8BE41D2A61290009EF7F /* ViedoDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7D8BE31D2A61290009EF7F /* ViedoDownloadCell.m */; };
+		FC7D8BEC1D2A74F00009EF7F /* DownloadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */; };
 		FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */; };
 		FC99B96F1CFC1CAA001D3F99 /* mainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99B96E1CFC1CAA001D3F99 /* mainWindowController.m */; };
 		FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9F87C11CEC208B007C9727 /* appIconViewController.m */; };
@@ -105,6 +109,13 @@
 		FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameSpaceBugViewController.xib; sourceTree = "<group>"; };
 		FC2BE6D41CABC54D006310BD /* BianLiFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianLiFileList.h; sourceTree = "<group>"; };
 		FC2BE6D51CABC54D006310BD /* BianLiFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianLiFileList.m; sourceTree = "<group>"; };
+		FC7D8BCE1D29F8470009EF7F /* bilibiliVideoDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bilibiliVideoDownload.h; sourceTree = "<group>"; };
+		FC7D8BCF1D29F8470009EF7F /* bilibiliVideoDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bilibiliVideoDownload.m; sourceTree = "<group>"; };
+		FC7D8BD01D29F8470009EF7F /* bilibiliVideoDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bilibiliVideoDownload.xib; sourceTree = "<group>"; };
+		FC7D8BE21D2A61290009EF7F /* ViedoDownloadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViedoDownloadCell.h; sourceTree = "<group>"; };
+		FC7D8BE31D2A61290009EF7F /* ViedoDownloadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViedoDownloadCell.m; sourceTree = "<group>"; };
+		FC7D8BEA1D2A74F00009EF7F /* DownloadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFile.h; sourceTree = "<group>"; };
+		FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFile.m; sourceTree = "<group>"; };
 		FC80EF281CE2C48B00935EF8 /* DataReadWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataReadWrite.h; path = "文件读写/DataReadWrite.h"; sourceTree = "<group>"; };
 		FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataReadWrite.m; path = "文件读写/DataReadWrite.m"; sourceTree = "<group>"; };
 		FC99B96D1CFC1CAA001D3F99 /* mainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainWindowController.h; sourceTree = "<group>"; };
@@ -307,6 +318,7 @@
 		FC2660361CAA8A3100537C9F /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC7D8BCD1D29F7CC0009EF7F /* bilibili视频下载 */,
 				FC05A0EC1D12A68C005FBD27 /* 一些小工具 */,
 				FCE8B74B1CF849F700B3BFD2 /* 测试视图 */,
 				FC9F87BF1CEC1FF3007C9727 /* app icon */,
@@ -351,6 +363,7 @@
 		FC2BE6D21CABC54D006310BD /* 常用方法或类 */ = {
 			isa = PBXGroup;
 			children = (
+				FC7D8BE91D2A74F00009EF7F /* DownloadFile */,
 				FC0ADFCA1CEC79210027780E /* 文件拖放接收视图 */,
 				FC80EF271CE2C43900935EF8 /* 数据保存 */,
 				FC2BE6D31CABC54D006310BD /* 文件遍历 */,
@@ -365,6 +378,27 @@
 				FC2BE6D51CABC54D006310BD /* BianLiFileList.m */,
 			);
 			path = "文件遍历";
+			sourceTree = "<group>";
+		};
+		FC7D8BCD1D29F7CC0009EF7F /* bilibili视频下载 */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D8BCE1D29F8470009EF7F /* bilibiliVideoDownload.h */,
+				FC7D8BCF1D29F8470009EF7F /* bilibiliVideoDownload.m */,
+				FC7D8BD01D29F8470009EF7F /* bilibiliVideoDownload.xib */,
+				FC7D8BE21D2A61290009EF7F /* ViedoDownloadCell.h */,
+				FC7D8BE31D2A61290009EF7F /* ViedoDownloadCell.m */,
+			);
+			name = "bilibili视频下载";
+			sourceTree = "<group>";
+		};
+		FC7D8BE91D2A74F00009EF7F /* DownloadFile */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D8BEA1D2A74F00009EF7F /* DownloadFile.h */,
+				FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */,
+			);
+			path = DownloadFile;
 			sourceTree = "<group>";
 		};
 		FC80EF271CE2C43900935EF8 /* 数据保存 */ = {
@@ -517,6 +551,7 @@
 				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
 				FC05A0F81D12A834005FBD27 /* zuo.png in Resources */,
 				FCFD41801D13DDD000D334A3 /* samllTools2ViewController.xib in Resources */,
+				FC7D8BD21D29F8470009EF7F /* bilibiliVideoDownload.xib in Resources */,
 				FC05A0F61D12A74B005FBD27 /* samllTools1ViewController.xib in Resources */,
 				FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
@@ -548,7 +583,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */,
+				FC7D8BD11D29F8470009EF7F /* bilibiliVideoDownload.m in Sources */,
 				FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */,
+				FC7D8BE41D2A61290009EF7F /* ViedoDownloadCell.m in Sources */,
 				FC2BE6C51CAB837D006310BD /* json_nosjViewController.m in Sources */,
 				FC2660351CAA88EF00537C9F /* bottomViewController.m in Sources */,
 				FC99B96F1CFC1CAA001D3F99 /* mainWindowController.m in Sources */,
@@ -556,6 +593,7 @@
 				FC265FF91CAA65A500537C9F /* mainViewController.m in Sources */,
 				FC2660251CAA744D00537C9F /* rightViewController.m in Sources */,
 				FC2660301CAA84DE00537C9F /* TopViewController.m in Sources */,
+				FC7D8BEC1D2A74F00009EF7F /* DownloadFile.m in Sources */,
 				FC26602A1CAA76E500537C9F /* leftTableViewController.m in Sources */,
 				FC05A0F51D12A74B005FBD27 /* samllTools1ViewController.m in Sources */,
 				FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */,

@@ -333,12 +333,13 @@
     NSString* houZui = [path lastPathComponent];
     houZui = [houZui substringFromIndex:houZui.length-4];
     if ([houZui isEqualToString:@".png"]) {
-        NSImage* image= [[NSImage alloc] initWithContentsOfFile:path];
+        NSImage* image= [[NSImage alloc] initWithData:[NSData dataWithContentsOfFile:path]];
         if (image) {
             //判断长宽是否相等
             if(image.size.height == image.size.width){
                 //判断是否符合大小
                 if (image.size.height>=29) {
+                    NSLog(@"%f",image.size.height);
                     return image.size.height;
                 }
             }
