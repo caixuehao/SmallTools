@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _message_label.stringValue = @"";
-    _AvID_tf.stringValue = @"http://www.bilibili.com/video/av2288962/";
+    _AvID_tf.stringValue = @"http://www.bilibili.com/video/av3300397/";
     _startDownload_btn.hidden = YES;
     _clearDownloadList_btn.hidden = YES;
     
@@ -75,22 +75,29 @@
     
 }
 - (IBAction)startDownload:(id)sender {
-    for (NSMutableDictionary *dic in CIDs_arr) {
-        if ([dic objectForKey:@"mode"] == 0) {
-            NSString* url = [NSString stringWithFormat:@"http://www.bilibilijj.com/Files/DownLoad/%@.mp4/www.bilibilijj.com.mp4?mp3=true",[dic objectForKey:@"cid"]];
+    for (int i = 0;i < CIDs_arr.count;i++) {
+        if ([[CIDs_arr[i] objectForKey:@"mode"] intValue] == 0) {
+            [CIDs_arr[i] setObject:@(1) forKey:@"mode"];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [_tableView reloadData];
+            });
+            NSString* url = [NSString stringWithFormat:@"http://www.bilibilijj.com/Files/DownLoad/%@.mp4/www.bilibilijj.com.mp4?mp3=true",[CIDs_arr[i] objectForKey:@"cid"]];
             NSLog(@"%@",url);
-            NSString* savePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Downloads"];
-            savePath = [NSString stringWithFormat:@"%@/%@.mp4",savePath,[dic objectForKey:@"title"]];
-            
-            [DownloadFile start:url savePath:savePath Downloading:^(long long PresentSize, long long WholeSize) {
+            NSString* Path = [NSHomeDirectory() stringByAppendingPathComponent:@"Downloads"];
+            NSString* savePath = [NSString stringWithFormat:@"%@/%@.mp4",Path,[CIDs_arr[i] objectForKey:@"title"]];
+            NSString* tmpPath = [NSString stringWithFormat:@"%@/%@.tmp",Path,[CIDs_arr[i] objectForKey:@"cid"]];
+            [DownloadFile start:url savePath:savePath tmpPath:tmpPath Downloading:^(long long PresentSize, long long WholeSize) {
                 NSLog(@"%lld/%lld",PresentSize,WholeSize);
             } Finished:^{
-                [dic setObject:@"mode" forKey:@(2)];
+                NSLog(@"%@",CIDs_arr);
+                [CIDs_arr[i] setObject:@(2) forKey:@"mode"];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [_tableView reloadData];
                 });
+                NSLog(@"%@",CIDs_arr);
             } error:^(NSString *error) {
-                [dic setObject:@"mode" forKey:@(-1)];
+                NSLog(@"ERROR:%@",error);
+                [CIDs_arr[i] setObject:@(-1) forKey:@"mode"];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [_tableView reloadData];
                 });
@@ -189,13 +196,13 @@
     if (mode == 0) {//下载
         [CIDs_arr[row] setObject:@(-1) forKey:@"mode"];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [tableView reloadData];
+            [_tableView reloadData];
         });
         
     } else if(mode == -1){//不下载
         [CIDs_arr[row] setObject:@(0) forKey:@"mode"];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [tableView reloadData];
+            [_tableView reloadData];
         });
     } 
 }

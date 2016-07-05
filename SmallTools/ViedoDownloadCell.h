@@ -10,5 +10,5 @@
 
 @interface ViedoDownloadCell : NSButtonCell
 //不会重写NSCell
--(void)setData:(NSDictionary*)data;
+-(void)setData:(NSMutableDictionary*)data;
 @end

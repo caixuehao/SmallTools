@@ -25,6 +25,8 @@ NSMutableDictionary* downloadFileTask_dic;//保存下载任务字典;
     Finished _finishedBlock;
     //一些错误通知
     ErrorMsg _errorBlock;
+    //文件临时地址
+    NSString* _tmpPath;
     //文件保存地址
     NSString* _savePath;
     //文件下载地址
@@ -43,20 +45,21 @@ NSMutableDictionary* downloadFileTask_dic;//保存下载任务字典;
  *  开始下载
  *
  *  @param URL  下载地址
- *  @param path 保存地址
+ *  @param savepath 保存地址
+ *  @param tmppath  没下完的保存地址（得唯一）
  *  @param downloadingBlock 下载中的回调
  *  @param finishedBlock    下载成功的回调
  *  @param errorBlock       一些错误通知
  */
 
-+(void)start:(NSString*)URL savePath:(NSString*)path Downloading:(void(^)(long long PresentSize,long long WholeSize))downloadingBlock Finished:(void(^)(void))finishedBlock error:(void(^)(NSString* error))errorBlock{
++(void)start:(NSString*)URL savePath:(NSString*)path tmpPath:(NSString*)tmpPath Downloading:(void(^)(long long PresentSize,long long WholeSize))downloadingBlock Finished:(void(^)(void))finishedBlock error:(void(^)(NSString* error))errorBlock{
     
     DownloadFile* downloadFile = [[DownloadFile alloc] init];
-    [downloadFile start:URL savePath:path Downloading:downloadingBlock Finished:finishedBlock error:errorBlock];
+    [downloadFile start:URL savePath:path tmpPath:tmpPath Downloading:downloadingBlock Finished:finishedBlock error:errorBlock];
     
     //保存句柄防止提前被删了
     if(!downloadFileTask_dic)downloadFileTask_dic = [[NSMutableDictionary alloc] init];
-    [downloadFileTask_dic setObject:downloadFile forKey:path];
+    [downloadFileTask_dic setObject:downloadFile forKey:tmpPath];
 }
 
 /**
@@ -69,7 +72,7 @@ NSMutableDictionary* downloadFileTask_dic;//保存下载任务字典;
  *  @param errorBlock       一些错误通知
  */
 
--(void)start:(NSString*)URL savePath:(NSString*)path Downloading:(void(^)(long long PresentSize,long long WholeSize))downloadingBlock Finished:(void(^)(void))finishedBlock error:(void(^)(NSString* error))errorBlock{
+-(void)start:(NSString*)URL savePath:(NSString*)path tmpPath:(NSString*)tmpPath Downloading:(void(^)(long long PresentSize,long long WholeSize))downloadingBlock Finished:(void(^)(void))finishedBlock error:(void(^)(NSString* error))errorBlock{
     
     
     _URL = URL;
@@ -77,10 +80,11 @@ NSMutableDictionary* downloadFileTask_dic;//保存下载任务字典;
     _downloadingBlock = downloadingBlock;
     _finishedBlock = finishedBlock;
     _errorBlock = errorBlock;
+    _tmpPath = tmpPath;
     
     _finished = NO;
     //路径检查
-    NSString* fileDirPath = [path substringToIndex:path.length - [path lastPathComponent].length-1];
+    NSString* fileDirPath = [path substringToIndex:_tmpPath.length - [_tmpPath lastPathComponent].length-1];
     NSLog(@"%@",fileDirPath);
     BOOL bo = [[NSFileManager defaultManager] createDirectoryAtPath:fileDirPath withIntermediateDirectories:YES attributes:nil error:nil];
     if (bo==NO) {
@@ -96,12 +100,12 @@ NSMutableDictionary* downloadFileTask_dic;//保存下载任务字典;
     //如果做成通用方法还需要多判断一下，继续下载的文件是否是这个。
     NSFileManager* mgr = [NSFileManager defaultManager];
     //查看文件是否存在
-    if([mgr fileExistsAtPath:_savePath] == NO){
+    if([mgr fileExistsAtPath:_tmpPath] == NO){
         // 创建一个空的文件到沙盒中
-        [mgr createFileAtPath:_savePath contents:nil attributes:nil];
+        [mgr createFileAtPath:_tmpPath contents:nil attributes:nil];
     }
     //创建一个用来写数据的文件句柄对象
-    _writeHandle = [NSFileHandle fileHandleForWritingAtPath:_savePath];
+    _writeHandle = [NSFileHandle fileHandleForWritingAtPath:_tmpPath];
     NSLog(@"%p",_writeHandle);
     if(_writeHandle == nil){
         errorBlock(@"文件创建失败");
@@ -116,10 +120,10 @@ NSMutableDictionary* downloadFileTask_dic;//保存下载任务字典;
     
     //http://blog.csdn.net/enuola/article/details/8077918
     // //开启一个runloop，使它始终处于运行状态(NSURLConnection 不响应Delegate方法)
-    while (!_finished)
-    {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-    }
+//    while (!_finished)
+//    {
+//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+//    }
     
     
 }
@@ -233,17 +237,52 @@ NSMutableDictionary* downloadFileTask_dic;//保存下载任务字典;
  */
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    //删除引用
-    [downloadFileTask_dic removeObjectForKey:_savePath];
+
     //移除通知
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
     [_writeHandle closeFile];
-    _finished = YES;
+//    _finished = YES;
     [self.connection cancel];
     self.connection = nil;
-    if(_finishedBlock)_finishedBlock();
+    //移动文件
+    //判断是否移动
+    NSFileManager* mgr = [NSFileManager defaultManager];
+    NSError* error;
+    for (int i = 0; 1; i++) {
+        NSString *savepath = [[NSString alloc] initWithString:_savePath];
+        //合成名字
+        if (i) {
+             NSRange range = [savepath rangeOfString:@"." options:NSBackwardsSearch];//从末位搜索
+            if (range.location != NSNotFound) {
+               NSString* str1 = [savepath substringToIndex:range.location];
+               NSString* str2 = [savepath substringFromIndex:range.location];
+               savepath = [NSString stringWithFormat:@"%@(%d)%@",str1,i,str2];
+            }else {
+                savepath = [NSString stringWithFormat:@"%@(%d)",savepath,i];
+            }
+        }
+        
+        if ([mgr moveItemAtPath:_tmpPath toPath:savepath error:&error] == NO){
+             if(516 == [error code]){
+                 
+            }else{
+                 _errorBlock([error localizedDescription]);
+                 break;
+            }
+        }else{
+             if(_finishedBlock)_finishedBlock();
+             break;
+        }
+    }
+   
+
+   
     
+    
+    
+    //删除引用
+    [downloadFileTask_dic removeObjectForKey:_savePath];
 }
 #pragma mark-----
 -(void)dealloc{
