@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _message_label.stringValue = @"";
-    _AvID_tf.stringValue = @"http://www.bilibili.com/video/av3300397/";
     _startDownload_btn.hidden = YES;
     _clearDownloadList_btn.hidden = YES;
     

@@ -19,3 +19,4 @@
 @property (weak) IBOutlet NSButton *clearDownloadList_btn;
 
 @end
+
