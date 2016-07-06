@@ -36,6 +36,7 @@
                     @"小工具1",\
                     @"小工具2",\
                     @"b站视频下载",\
+                    @"文件合并",\
                     @"整合"\
                     ]
 
@@ -48,6 +49,7 @@
                        @"小工具1",\
                        @"小工具2",\
                        @"b站视频下载",\
+                       @"文件合并工具（mac自带的感觉有点坑）",\
                        @"就是这个程序框架"\
                       ]
 
@@ -57,6 +59,7 @@
                          @1,\
                          @1,\
                          @0,\
+                         @1,\
                          @1,\
                          @1,\
                          @1,\
@@ -91,7 +94,8 @@
 #import "bilibiliVideoDownload.h"
 #define TOOL_CLASSES_NAME_7 bilibiliVideoDownload
 
-#define TOOL_CLASSES_NAME_8 defaultViewController
+#import "FileMergeVC.h"
+#define TOOL_CLASSES_NAME_8 FileMergeVC
 
 #define TOOL_CLASSES_NAME_9 defaultViewController
 

@@ -28,8 +28,10 @@
         }
         else {
 //            NSLog (@"%@ is a file", pathin);
-            if (!panduan(str)) {
-                continue;
+            if(panduan){
+                if (!panduan(str)) {
+                    continue;
+                }
             }
             [PathList addObject:pathin];
         }

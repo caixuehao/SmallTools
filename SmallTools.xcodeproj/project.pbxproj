@@ -15,6 +15,8 @@
 		FC0745691D2CDF6A000DFBA6 /* bilibiliVideoDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0745611D2CDF6A000DFBA6 /* bilibiliVideoDownload.m */; };
 		FC07456A1D2CDF6A000DFBA6 /* bilibiliVideoDownload.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0745621D2CDF6A000DFBA6 /* bilibiliVideoDownload.xib */; };
 		FC07456B1D2CDF6A000DFBA6 /* ViedoDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0745641D2CDF6A000DFBA6 /* ViedoDownloadCell.m */; };
+		FC07457A1D2CF9BB000DFBA6 /* FileMergeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0745781D2CF9BB000DFBA6 /* FileMergeVC.m */; };
+		FC07457B1D2CF9BB000DFBA6 /* FileMergeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0745791D2CF9BB000DFBA6 /* FileMergeVC.xib */; };
 		FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0ADFCC1CEC79210027780E /* DragDropView.m */; };
 		FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC11A8121CC24B590077A79E /* PlanbookViewController.m */; };
 		FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC11A8131CC24B590077A79E /* PlanbookViewController.xib */; };
@@ -77,6 +79,9 @@
 		FC0745621D2CDF6A000DFBA6 /* bilibiliVideoDownload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bilibiliVideoDownload.xib; sourceTree = "<group>"; };
 		FC0745631D2CDF6A000DFBA6 /* ViedoDownloadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViedoDownloadCell.h; sourceTree = "<group>"; };
 		FC0745641D2CDF6A000DFBA6 /* ViedoDownloadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViedoDownloadCell.m; sourceTree = "<group>"; };
+		FC0745771D2CF9BB000DFBA6 /* FileMergeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileMergeVC.h; path = "工具实现代码/文件合并/FileMergeVC.h"; sourceTree = SOURCE_ROOT; };
+		FC0745781D2CF9BB000DFBA6 /* FileMergeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileMergeVC.m; path = "工具实现代码/文件合并/FileMergeVC.m"; sourceTree = SOURCE_ROOT; };
+		FC0745791D2CF9BB000DFBA6 /* FileMergeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FileMergeVC.xib; path = "工具实现代码/文件合并/FileMergeVC.xib"; sourceTree = SOURCE_ROOT; };
 		FC0ADFCB1CEC79210027780E /* DragDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropView.h; sourceTree = "<group>"; };
 		FC0ADFCC1CEC79210027780E /* DragDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropView.m; sourceTree = "<group>"; };
 		FC11A8111CC24B590077A79E /* PlanbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanbookViewController.h; sourceTree = "<group>"; };
@@ -184,6 +189,16 @@
 			name = "bilibili视频下载";
 			path = "工具实现代码/bilibili视频下载";
 			sourceTree = SOURCE_ROOT;
+		};
+		FC07456C1D2CECF1000DFBA6 /* 文件合并 */ = {
+			isa = PBXGroup;
+			children = (
+				FC0745771D2CF9BB000DFBA6 /* FileMergeVC.h */,
+				FC0745781D2CF9BB000DFBA6 /* FileMergeVC.m */,
+				FC0745791D2CF9BB000DFBA6 /* FileMergeVC.xib */,
+			);
+			name = "文件合并";
+			sourceTree = "<group>";
 		};
 		FC0ADFCA1CEC79210027780E /* 文件拖放接收视图 */ = {
 			isa = PBXGroup;
@@ -332,6 +347,7 @@
 		FC2660361CAA8A3100537C9F /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC07456C1D2CECF1000DFBA6 /* 文件合并 */,
 				FC0745581D2CDF6A000DFBA6 /* 小工具 */,
 				FC07455F1D2CDF6A000DFBA6 /* bilibili视频下载 */,
 				FCE8B74B1CF849F700B3BFD2 /* 测试视图 */,
@@ -554,6 +570,7 @@
 				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
 				FC0745681D2CDF6A000DFBA6 /* samllTools2ViewController.xib in Resources */,
 				FC07456A1D2CDF6A000DFBA6 /* bilibiliVideoDownload.xib in Resources */,
+				FC07457B1D2CF9BB000DFBA6 /* FileMergeVC.xib in Resources */,
 				FC05A0F81D12A834005FBD27 /* zuo.png in Resources */,
 				FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
@@ -605,6 +622,7 @@
 				FCE8B74F1CF849F700B3BFD2 /* testVC.m in Sources */,
 				FC265FF31CAA65A500537C9F /* AppDelegate.m in Sources */,
 				FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */,
+				FC07457A1D2CF9BB000DFBA6 /* FileMergeVC.m in Sources */,
 				FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
