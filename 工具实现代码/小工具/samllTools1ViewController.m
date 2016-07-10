@@ -8,7 +8,9 @@
 
 #import "samllTools1ViewController.h"
 
-@interface samllTools1ViewController ()
+@interface samllTools1ViewController (){
+    BOOL isjson;
+}
 
 @end
 
@@ -19,7 +21,7 @@
     // Do view setup here.
     _tf1.stringValue = @" ";
     _tf2.stringValue = @",";
-    
+    isjson = NO;
     
     _ddv1 = [[DragDropView alloc] initWithFrame:NSMakeRect(140 , 60, 140, 140)];
     _ddv1.delegate = self;
@@ -43,6 +45,13 @@
 - (IBAction)文档转格式:(id)sender {
     NSData* data = [NSData dataWithContentsOfFile:_path_str];
     NSLog(@"%lu",data.length);
+    
+    if(isjson){
+     NSMutableDictionary* jsonData_dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+     [[NSJSONSerialization dataWithJSONObject:jsonData_dic options:NSJSONWritingPrettyPrinted error:nil] writeToFile:_path_str atomically:YES];
+     return;
+    }
+    
     NSStringEncoding enc =CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
     NSString*  content = [[NSString alloc] initWithData:data encoding:enc];
     //写入
@@ -58,7 +67,6 @@
     //如果数组不存在或为空直接返回不做处理（这种方法应该被广泛的使用，在进行数据处理前应该现判断是否为空。）
     if(!fileList || [fileList count] <= 0)return;
 
-    //.xcassets工程文件
     if(fileList.count == 1){
         NSString* houZui = [fileList[0] lastPathComponent];
         houZui = [houZui substringFromIndex:houZui.length-4];
@@ -66,6 +74,12 @@
             _path_str = fileList[0];
             [_btn1 setTitle:[_path_str lastPathComponent]];
             [_ddv1.layer setBackgroundColor:[[NSColor greenColor] CGColor]];
+            isjson = NO;
+        }else if ([houZui isEqualToString:@"json"]){
+            _path_str = fileList[0];
+            [_btn1 setTitle:[_path_str lastPathComponent]];
+            [_ddv1.layer setBackgroundColor:[[NSColor greenColor] CGColor]];
+            isjson = YES;
         }
     }
 }

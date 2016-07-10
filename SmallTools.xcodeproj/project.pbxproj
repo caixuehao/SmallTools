@@ -44,7 +44,8 @@
 		FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9F87C11CEC208B007C9727 /* appIconViewController.m */; };
 		FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9F87C21CEC208B007C9727 /* appIconViewController.xib */; };
 		FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */; };
-		FCE6504F1CEEE73A00D3DEFA /* 模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */; };
+		FCC3B5521D327FD500BA23B1 /* iphone模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCC3B5511D327FD500BA23B1 /* iphone模版Contents.json */; };
+		FCC3B5541D32802000BA23B1 /* mac模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCC3B5531D32802000BA23B1 /* mac模版Contents.json */; };
 		FCE8B74F1CF849F700B3BFD2 /* testVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE8B74D1CF849F700B3BFD2 /* testVC.m */; };
 		FCE8B7501CF849F700B3BFD2 /* testVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE8B74E1CF849F700B3BFD2 /* testVC.xib */; };
 /* End PBXBuildFile section */
@@ -132,7 +133,8 @@
 		FC9F87C11CEC208B007C9727 /* appIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = appIconViewController.m; path = "工具实现代码/应用图标/appIconViewController.m"; sourceTree = SOURCE_ROOT; };
 		FC9F87C21CEC208B007C9727 /* appIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = appIconViewController.xib; path = "工具实现代码/应用图标/appIconViewController.xib"; sourceTree = SOURCE_ROOT; };
 		FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100-100.jpg"; sourceTree = "<group>"; };
-		FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "模版Contents.json"; sourceTree = "<group>"; };
+		FCC3B5511D327FD500BA23B1 /* iphone模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iphone模版Contents.json"; sourceTree = "<group>"; };
+		FCC3B5531D32802000BA23B1 /* mac模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mac模版Contents.json"; sourceTree = "<group>"; };
 		FCE8B74C1CF849F700B3BFD2 /* testVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testVC.h; sourceTree = "<group>"; };
 		FCE8B74D1CF849F700B3BFD2 /* testVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testVC.m; sourceTree = "<group>"; };
 		FCE8B74E1CF849F700B3BFD2 /* testVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testVC.xib; sourceTree = "<group>"; };
@@ -442,7 +444,8 @@
 			isa = PBXGroup;
 			children = (
 				FC05A0F71D12A834005FBD27 /* zuo.png */,
-				FCE6504E1CEEE73A00D3DEFA /* 模版Contents.json */,
+				FCC3B5511D327FD500BA23B1 /* iphone模版Contents.json */,
+				FCC3B5531D32802000BA23B1 /* mac模版Contents.json */,
 				FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */,
 			);
 			path = "资源";
@@ -564,11 +567,12 @@
 			files = (
 				FC0745661D2CDF6A000DFBA6 /* samllTools1ViewController.xib in Resources */,
 				FC265FFB1CAA65A500537C9F /* Assets.xcassets in Resources */,
+				FCC3B5541D32802000BA23B1 /* mac模版Contents.json in Resources */,
 				FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */,
-				FCE6504F1CEEE73A00D3DEFA /* 模版Contents.json in Resources */,
 				FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */,
 				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
 				FC0745681D2CDF6A000DFBA6 /* samllTools2ViewController.xib in Resources */,
+				FCC3B5521D327FD500BA23B1 /* iphone模版Contents.json in Resources */,
 				FC07456A1D2CDF6A000DFBA6 /* bilibiliVideoDownload.xib in Resources */,
 				FC07457B1D2CF9BB000DFBA6 /* FileMergeVC.xib in Resources */,
 				FC05A0F81D12A834005FBD27 /* zuo.png in Resources */,
@@ -754,7 +758,7 @@
 		FC2660191CAA65A500537C9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SmallTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -766,7 +770,7 @@
 		FC26601A1CAA65A500537C9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SmallTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

@@ -48,7 +48,7 @@
 }
 - (IBAction)确定:(id)sender {
 
-
+  
 
     
     if(_icon_arr.count > 0&& _xcassets_path != NULL){
@@ -56,8 +56,16 @@
         NSString* main_path = [self xcassets_path_chuli];
         if(main_path.length == 0)return;
         
+        NSString* jsontext;
+        if(_popUpbtn.indexOfSelectedItem == 0){
+          jsontext = @"iphone模版Contents";
+        }else if(_popUpbtn.indexOfSelectedItem == 1){
+          jsontext = @"mac模版Contents";
+        }
+      
+        
         //模版json（因为oc数据是“假循环”所以搞两个字典）
-        NSString* path = [[NSBundle mainBundle] pathForResource:@"模版Contents" ofType:@"json"];
+        NSString* path = [[NSBundle mainBundle] pathForResource:jsontext ofType:@"json"];
         NSMutableDictionary* Template_json = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:NSJSONReadingMutableContainers error:nil];
     
         NSMutableArray* images = [[NSMutableArray alloc] init];
@@ -240,9 +248,16 @@
                 }
                 _maxSize_icon = btn_image_path;
                 [_btn1 setImage:[[NSImage alloc ] initWithContentsOfFile:btn_image_path]];
-                if(f<180){
-                    [_btn1 setTitle:@"至少得有个180的图标吧"];
-                    [self log:@"至少得有个180的图标吧,要不无法合成一些尺寸的图标"];
+                
+                NSInteger minIconSize = 180;
+                if(_popUpbtn.indexOfSelectedItem == 0){
+                    minIconSize = 180;
+                }else if(_popUpbtn.indexOfSelectedItem == 1){
+                     minIconSize = 1024;
+                }
+                if(f<minIconSize){
+                    [_btn1 setTitle:[NSString stringWithFormat:@"至少得有个%lu的图标吧",minIconSize]];
+                    [self log:[NSString stringWithFormat:@"至少得有个%lu的图标吧,要不无法合成一些尺寸的图标",minIconSize]];
                     [_ddv1.layer setBackgroundColor:[[NSColor orangeColor] CGColor]];
                 }else{
                     [_btn1 setTitle:@""];
@@ -259,9 +274,15 @@
                     NSImage* image= [[NSImage alloc] initWithContentsOfFile:fileList[0]];
                     [_btn1 setImage:image];
                     _maxSize_icon = fileList[0];
-                    if(f<180){
-                        [_btn1 setTitle:@"至少得有个180的图标吧"];
-                         [self log:@"至少得有个180的图标吧,要不无法合成一些尺寸的图标"];
+                    NSInteger minIconSize = 180;
+                    if(_popUpbtn.indexOfSelectedItem == 0){
+                        minIconSize = 180;
+                    }else if(_popUpbtn.indexOfSelectedItem == 1){
+                        minIconSize = 1024;
+                    }
+                    if(f<minIconSize){
+                        [_btn1 setTitle:[NSString stringWithFormat:@"至少得有个%lu的图标吧",minIconSize]];
+                        [self log:[NSString stringWithFormat:@"至少得有个%lu的图标吧,要不无法合成一些尺寸的图标",minIconSize]];
                         [_ddv1.layer setBackgroundColor:[[NSColor orangeColor] CGColor]];
                     }else{
                         [_btn1 setTitle:@""];

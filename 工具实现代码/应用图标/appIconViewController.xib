@@ -8,6 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="appIconViewController">
             <connections>
                 <outlet property="logTV" destination="3Zp-gJ-AqO" id="LJ0-35-fPB"/>
+                <outlet property="popUpbtn" destination="0ZG-d6-pSh" id="yf8-xb-t2J"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -55,6 +56,27 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ZG-d6-pSh">
+                    <rect key="frame" x="70" y="119" width="77" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="iphone " bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Aqz-Wa-x8K" id="X5u-UD-ZNS">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" id="xcx-AI-p3T">
+                            <items>
+                                <menuItem title="iphone " state="on" id="Aqz-Wa-x8K"/>
+                                <menuItem title="mac" id="ZGe-Uf-4Dz"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMi-jp-DvX">
+                    <rect key="frame" x="18" y="123" width="46" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="app类型" id="q6c-Li-rmL">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
         </customView>
     </objects>

@@ -18,6 +18,8 @@
 
 @property(nonatomic,strong)NSString* maxSize_icon;//最大的图标，用来合成其它图片
 
+@property (weak) IBOutlet NSPopUpButton *popUpbtn;
+
 @property (unsafe_unretained) IBOutlet NSTextView *logTV;
 
 @property(nonatomic,strong)NSButton* btn1;
