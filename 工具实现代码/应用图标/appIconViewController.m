@@ -353,6 +353,7 @@
     //先检查后缀名
     NSString* houZui = [path lastPathComponent];
     houZui = [houZui substringFromIndex:houZui.length-4];
+    //||[houZui isEqualToString:@".jpg"
     if ([houZui isEqualToString:@".png"]) {
         NSImage* image= [[NSImage alloc] initWithData:[NSData dataWithContentsOfFile:path]];
         if (image) {
