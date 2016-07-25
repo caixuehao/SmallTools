@@ -38,6 +38,7 @@
 		FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6CE1CABAB65006310BD /* nameSpaceBugViewController.m */; };
 		FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */; };
 		FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6D51CABC54D006310BD /* BianLiFileList.m */; };
+		FC4704671D46086E009F0B62 /* DownloadFile2.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4704661D46086E009F0B62 /* DownloadFile2.m */; };
 		FC7D8BEC1D2A74F00009EF7F /* DownloadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */; };
 		FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */; };
 		FC99B96F1CFC1CAA001D3F99 /* mainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99B96E1CFC1CAA001D3F99 /* mainWindowController.m */; };
@@ -123,6 +124,8 @@
 		FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameSpaceBugViewController.xib; sourceTree = "<group>"; };
 		FC2BE6D41CABC54D006310BD /* BianLiFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianLiFileList.h; sourceTree = "<group>"; };
 		FC2BE6D51CABC54D006310BD /* BianLiFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianLiFileList.m; sourceTree = "<group>"; };
+		FC4704651D46086E009F0B62 /* DownloadFile2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFile2.h; sourceTree = "<group>"; };
+		FC4704661D46086E009F0B62 /* DownloadFile2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFile2.m; sourceTree = "<group>"; };
 		FC7D8BEA1D2A74F00009EF7F /* DownloadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFile.h; sourceTree = "<group>"; };
 		FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFile.m; sourceTree = "<group>"; };
 		FC80EF281CE2C48B00935EF8 /* DataReadWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataReadWrite.h; path = "文件读写/DataReadWrite.h"; sourceTree = "<group>"; };
@@ -417,6 +420,8 @@
 			children = (
 				FC7D8BEA1D2A74F00009EF7F /* DownloadFile.h */,
 				FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */,
+				FC4704651D46086E009F0B62 /* DownloadFile2.h */,
+				FC4704661D46086E009F0B62 /* DownloadFile2.m */,
 			);
 			path = DownloadFile;
 			sourceTree = "<group>";
@@ -617,6 +622,7 @@
 				FC2660251CAA744D00537C9F /* rightViewController.m in Sources */,
 				FC2660301CAA84DE00537C9F /* TopViewController.m in Sources */,
 				FC07456B1D2CDF6A000DFBA6 /* ViedoDownloadCell.m in Sources */,
+				FC4704671D46086E009F0B62 /* DownloadFile2.m in Sources */,
 				FC0745651D2CDF6A000DFBA6 /* samllTools1ViewController.m in Sources */,
 				FC7D8BEC1D2A74F00009EF7F /* DownloadFile.m in Sources */,
 				FC26602A1CAA76E500537C9F /* leftTableViewController.m in Sources */,

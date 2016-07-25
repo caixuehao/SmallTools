@@ -9,6 +9,7 @@
 #import "bilibiliVideoDownload.h"
 #import "ViedoDownloadCell.h"
 #import "DownloadFile.h"
+#import "DownloadFile2.h"
 @interface bilibiliVideoDownload ()
 
 @end
@@ -20,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _AvID_tf.stringValue = @"http://www.bilibili.com/video/av5452833/";
     _message_label.stringValue = @"";
     _startDownload_btn.hidden = YES;
     _clearDownloadList_btn.hidden = YES;
@@ -85,7 +87,7 @@
             NSString* Path = [NSHomeDirectory() stringByAppendingPathComponent:@"Downloads"];
             NSString* savePath = [NSString stringWithFormat:@"%@/%@.mp4",Path,[CIDs_arr[i] objectForKey:@"title"]];
             NSString* tmpPath = [NSString stringWithFormat:@"%@/%@.tmp",Path,[CIDs_arr[i] objectForKey:@"cid"]];
-            [DownloadFile start:url savePath:savePath tmpPath:tmpPath Downloading:^(long long PresentSize, long long WholeSize) {
+            [DownloadFile2 start:url savePath:savePath tmpPath:tmpPath Downloading:^(long long PresentSize, long long WholeSize) {
                 NSLog(@"%lld/%lld",PresentSize,WholeSize);
             } Finished:^{
                 NSLog(@"%@",CIDs_arr);
