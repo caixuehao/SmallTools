@@ -106,7 +106,9 @@
             NSString* url = [NSString stringWithFormat:@"http://www.bilibilijj.com/Files/DownLoad/%@.mp4/www.bilibilijj.com.mp4?mp3=true",[CIDs_arr[i] objectForKey:@"cid"]];
             NSLog(@"%@",url);
             NSString* Path = [NSHomeDirectory() stringByAppendingPathComponent:@"Downloads"];
-            NSString* savePath = [NSString stringWithFormat:@"%@/%@.mp4",Path,[CIDs_arr[i] objectForKey:@"title"]];
+            NSString* titleStr = [CIDs_arr[i] objectForKey:@"title"];
+            titleStr = [titleStr stringByReplacingOccurrencesOfString:@"/" withString:@"|"];//防止标题出现特殊符号
+            NSString* savePath = [NSString stringWithFormat:@"%@/%@.mp4",Path,titleStr];
             NSString* tmpPath = [NSString stringWithFormat:@"%@/%@.tmp",Path,[CIDs_arr[i] objectForKey:@"cid"]];
             [DownloadFile2 start:url savePath:savePath tmpPath:tmpPath Downloading:^(long long PresentSize, long long WholeSize) {
                 NSLog(@"%lld/%lld",PresentSize,WholeSize);
@@ -180,7 +182,7 @@
                                                   }
                                                   NSString* title = [NSString stringWithFormat:@"%@ %@",av_Title,subTitle];
                                                   NSMutableDictionary* dic = [[NSMutableDictionary alloc] initWithDictionary:@{@"cid":cid,@"title":title}];
-                                                  [out_Cids addObject:dic];;
+                                                  [out_Cids addObject:dic];
                                               }
                                               block(out_Cids);
 

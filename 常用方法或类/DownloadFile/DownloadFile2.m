@@ -108,6 +108,7 @@ typedef void (^ErrorMsg)(NSString* str);
             break;
         }
     }
+    [session invalidateAndCancel];
 }
 #pragma mark - 下载成功 获取下载内容
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite; {
@@ -122,5 +123,6 @@ typedef void (^ErrorMsg)(NSString* str);
     if (error) {
           _errorBlock([error localizedDescription]);
     }
+     [session invalidateAndCancel];
 }
 @end
