@@ -52,8 +52,14 @@
 
 - (IBAction)Download_start:(id)sender {
     if (_AvID_tf.stringValue.length == 0) return;
+    
+    
+    
+   
     //解析Aid
     NSString* Aid = [self getAid:_AvID_tf.stringValue];
+    NSString* bangumiID = [self isBiliBiliBangumi:_AvID_tf.stringValue];//查看是否是番剧
+    
     if (Aid.length > 0) {
         _message_label.stringValue = [NSString stringWithFormat:@"视频Aid:%@",Aid];
         [self getCids:Aid Block:^(NSMutableArray *Cids) {
@@ -69,6 +75,21 @@
             });
         }];
         
+    }else if(bangumiID.length > 0){
+        _message_label.stringValue = [NSString stringWithFormat:@"番剧ID:%@",bangumiID];
+        [self getBangumiCids:bangumiID Block:^(NSMutableArray *Cids) {
+            NSLog(@"%@",Cids);
+            CIDs_arr = Cids;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                _message_label.stringValue = [NSString stringWithFormat:@"番剧ID:%@ 有%lu个视频等待下载",bangumiID,Cids.count];
+                [_tableView reloadData];
+                if (Cids.count) {
+                    _startDownload_btn.hidden = NO;
+                    _clearDownloadList_btn.hidden = NO;
+                }
+            });
+        }];
+    
     }else{
         _message_label.stringValue = @"输入有误,没有解析到Aid";
     }
@@ -131,6 +152,7 @@
 }
 
 //获取cids
+//普通视频专题的cids
 -(void)getCids:(NSString*)Aid Block:(void(^)(NSMutableArray* Cids))block{
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://app.bilibili.com/x/view?actionKey=appkey&aid=%@&appkey=27eb53fc9058f8c3",Aid]]];
     request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;//忽略本地缓存数据
@@ -169,7 +191,44 @@
     [dataTask resume];
     
 }
+//获取番剧的cids
+-(void)getBangumiCids:(NSString*)bangumiID Block:(void(^)(NSMutableArray* Cids))block{
+    NSString* urlstr = [NSString stringWithFormat:@"http://bangumi.bilibili.com/jsonp/seasoninfo/%@.ver",bangumiID];
+    NSLog(@"%@",urlstr);
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstr]];
+    request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;//忽略本地缓存数据
+    NSURLSession *session = [NSURLSession sharedSession];
+   [[session dataTaskWithRequest:request completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error)
+     {
+         if (!error)
+         {
+             NSMutableArray* out_Cids = [[NSMutableArray alloc] init];
+             NSString* datastr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+             //查看是否是jsonp
+             NSRange headRange  = [datastr rangeOfString:@"{"];
+             if(headRange.location){
+                 datastr = [datastr substringFromIndex:headRange.location];
+                 NSRange endRange = [datastr rangeOfString:@"}" options:NSBackwardsSearch];
+                 datastr = [datastr substringToIndex:endRange.location+1];
+             }
+             
+             NSDictionary* data_dic = [NSJSONSerialization JSONObjectWithData:[datastr dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
+             data_dic = [data_dic objectForKey:@"result"];
+             //只能获取aid
+             NSArray* pages = [data_dic objectForKey:@"episodes"];
+             for (NSDictionary *dic in pages) {
+                [self getCids:[dic objectForKey:@"av_id"] Block:^(NSMutableArray *Cids) {
+                    [out_Cids addObjectsFromArray:Cids];
+                    if(out_Cids.count == pages.count)block(out_Cids);
+                }];
+             }
+         }
+         
+     }] resume];
+    
 
+
+}
 #pragma NSTableViewDataSource,NSTableViewDelegate---
 //返回有几列（必须实现）
 - ( NSInteger )numberOfRowsInTableView:( NSTableView *)tableView
@@ -250,4 +309,21 @@
     return @"";
 }
 
+//判断是否是bilibili番剧
+- (NSString*)isBiliBiliBangumi:(NSString*)string{
+    if(string.length<=34)return @"";
+    
+    NSString* str1 = [string substringToIndex:34];
+    NSString* str2 = [string substringFromIndex:34];
+    if ([str1 compare:@"http://bangumi.bilibili.com/anime/" options:NSCaseInsensitiveSearch] == NSOrderedSame) {
+        NSRange range = [str2 rangeOfString:@"/"];
+        if (range.location != NSNotFound) {
+            str2 = [str2 substringToIndex:range.location];
+        }
+        if ([self isPureInt:str2]) {
+            return str2;
+        }
+    }
+    return @"";
+}
 @end
