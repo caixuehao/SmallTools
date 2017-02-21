@@ -19,6 +19,7 @@
         self.backgroundColor = [NSColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1];
         //tf = [[NSTextField alloc] initWithFrame:NSMakeRect(10, 25, self.cellSize.width-20, 25)];
         self.font = [NSFont systemFontOfSize:11];
+        self.image = [NSImage imageNamed:@"100-100.jpg"];
     }
     return self;
 }

@@ -17,6 +17,7 @@
 		FC07456B1D2CDF6A000DFBA6 /* ViedoDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0745641D2CDF6A000DFBA6 /* ViedoDownloadCell.m */; };
 		FC07457A1D2CF9BB000DFBA6 /* FileMergeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0745781D2CF9BB000DFBA6 /* FileMergeVC.m */; };
 		FC07457B1D2CF9BB000DFBA6 /* FileMergeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0745791D2CF9BB000DFBA6 /* FileMergeVC.xib */; };
+		FC0A7EA11E5BDD8E00C1B03F /* iphone(xcode8)模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FC0A7EA01E5BDD8E00C1B03F /* iphone(xcode8)模版Contents.json */; };
 		FC0ADFCD1CEC79210027780E /* DragDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0ADFCC1CEC79210027780E /* DragDropView.m */; };
 		FC11A8141CC24B590077A79E /* PlanbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC11A8121CC24B590077A79E /* PlanbookViewController.m */; };
 		FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC11A8131CC24B590077A79E /* PlanbookViewController.xib */; };
@@ -84,6 +85,7 @@
 		FC0745771D2CF9BB000DFBA6 /* FileMergeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileMergeVC.h; path = "工具实现代码/文件合并/FileMergeVC.h"; sourceTree = SOURCE_ROOT; };
 		FC0745781D2CF9BB000DFBA6 /* FileMergeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileMergeVC.m; path = "工具实现代码/文件合并/FileMergeVC.m"; sourceTree = SOURCE_ROOT; };
 		FC0745791D2CF9BB000DFBA6 /* FileMergeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FileMergeVC.xib; path = "工具实现代码/文件合并/FileMergeVC.xib"; sourceTree = SOURCE_ROOT; };
+		FC0A7EA01E5BDD8E00C1B03F /* iphone(xcode8)模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iphone(xcode8)模版Contents.json"; sourceTree = "<group>"; };
 		FC0ADFCB1CEC79210027780E /* DragDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropView.h; sourceTree = "<group>"; };
 		FC0ADFCC1CEC79210027780E /* DragDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropView.m; sourceTree = "<group>"; };
 		FC11A8111CC24B590077A79E /* PlanbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanbookViewController.h; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 			children = (
 				FC05A0F71D12A834005FBD27 /* zuo.png */,
 				FCC3B5511D327FD500BA23B1 /* iphone模版Contents.json */,
+				FC0A7EA01E5BDD8E00C1B03F /* iphone(xcode8)模版Contents.json */,
 				FCC3B5531D32802000BA23B1 /* mac模版Contents.json */,
 				FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */,
 			);
@@ -571,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC0745661D2CDF6A000DFBA6 /* samllTools1ViewController.xib in Resources */,
+				FC0A7EA11E5BDD8E00C1B03F /* iphone(xcode8)模版Contents.json in Resources */,
 				FC265FFB1CAA65A500537C9F /* Assets.xcassets in Resources */,
 				FCC3B5541D32802000BA23B1 /* mac模版Contents.json in Resources */,
 				FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */,

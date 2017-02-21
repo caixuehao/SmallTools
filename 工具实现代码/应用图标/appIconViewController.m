@@ -60,6 +60,8 @@
         if(_popUpbtn.indexOfSelectedItem == 0){
           jsontext = @"iphone模版Contents";
         }else if(_popUpbtn.indexOfSelectedItem == 1){
+            jsontext = @"iphone(xcode8)模版Contents";
+        }else if(_popUpbtn.indexOfSelectedItem == 2){
           jsontext = @"mac模版Contents";
         }
       
@@ -253,7 +255,9 @@
                 if(_popUpbtn.indexOfSelectedItem == 0){
                     minIconSize = 180;
                 }else if(_popUpbtn.indexOfSelectedItem == 1){
-                     minIconSize = 1024;
+                     minIconSize = 180;
+                }else if(_popUpbtn.indexOfSelectedItem == 2){
+                    minIconSize = 1024;
                 }
                 if(f<minIconSize){
                     [_btn1 setTitle:[NSString stringWithFormat:@"至少得有个%lu的图标吧",minIconSize]];
