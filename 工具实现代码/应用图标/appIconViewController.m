@@ -15,7 +15,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    
+   
+    [_popUpbtn setIntegerValue:0];
     
     _ddv1 = [[DragDropView alloc] initWithFrame:NSMakeRect(40 , 220, 140, 140)];
     _ddv1.delegate = self;
@@ -282,6 +283,8 @@
                     if(_popUpbtn.indexOfSelectedItem == 0){
                         minIconSize = 180;
                     }else if(_popUpbtn.indexOfSelectedItem == 1){
+                        minIconSize = 180;
+                    }else if(_popUpbtn.indexOfSelectedItem == 2){
                         minIconSize = 1024;
                     }
                     if(f<minIconSize){

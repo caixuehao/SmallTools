@@ -18,16 +18,6 @@
             <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CW0-hz-9SE">
-                    <rect key="frame" x="147" y="116" width="118" height="28"/>
-                    <buttonCell key="cell" type="push" title="开始" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pcC-hg-2uu">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="11" name=".PingFangSC-Regular"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="确定:" target="-2" id="vbm-UV-APs"/>
-                    </connections>
-                </button>
                 <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNP-gk-E0g">
                     <rect key="frame" x="20" y="20" width="360" height="94"/>
                     <clipView key="contentView" ambiguous="YES" id="c4V-Ug-SvC">
@@ -57,15 +47,15 @@
                     </scroller>
                 </scrollView>
                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ZG-d6-pSh">
-                    <rect key="frame" x="70" y="119" width="77" height="22"/>
-                    <popUpButtonCell key="cell" type="push" title="iphone  xcode8" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="FHl-29-swH" id="X5u-UD-ZNS">
+                    <rect key="frame" x="70" y="119" width="152" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="iphone " bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Aqz-Wa-x8K" id="X5u-UD-ZNS">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="smallSystem"/>
                         <menu key="menu" id="xcx-AI-p3T">
                             <items>
                                 <menuItem title="iphone " state="on" id="Aqz-Wa-x8K"/>
-                                <menuItem title="iphone  xcode8" id="FHl-29-swH"/>
-                                <menuItem title="mac" id="ZGe-Uf-4Dz"/>
+                                <menuItem title="iphone(xcode8)" id="ZGe-Uf-4Dz" userLabel="iphone(xcode8)"/>
+                                <menuItem title="mac" id="Mjq-m8-7WD"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
@@ -78,6 +68,16 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CW0-hz-9SE">
+                    <rect key="frame" x="229" y="117" width="118" height="28"/>
+                    <buttonCell key="cell" type="push" title="开始" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pcC-hg-2uu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="11" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="确定:" target="-2" id="vbm-UV-APs"/>
+                    </connections>
+                </button>
             </subviews>
         </customView>
     </objects>
