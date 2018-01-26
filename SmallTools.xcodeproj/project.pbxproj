@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBCA4D9D4602A2A9EEE8F884 /* libPods-SmallTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A3780A8CD3E06B054FAB6A /* libPods-SmallTools.a */; };
 		FC05A0F81D12A834005FBD27 /* zuo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC05A0F71D12A834005FBD27 /* zuo.png */; };
 		FC0745651D2CDF6A000DFBA6 /* samllTools1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07455A1D2CDF6A000DFBA6 /* samllTools1ViewController.m */; };
 		FC0745661D2CDF6A000DFBA6 /* samllTools1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC07455B1D2CDF6A000DFBA6 /* samllTools1ViewController.xib */; };
@@ -39,15 +40,23 @@
 		FC2BE6D01CABAB65006310BD /* nameSpaceBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6CE1CABAB65006310BD /* nameSpaceBugViewController.m */; };
 		FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */; };
 		FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BE6D51CABC54D006310BD /* BianLiFileList.m */; };
+		FC3349951E9F73B900936FE1 /* bilibili.js in Resources */ = {isa = PBXBuildFile; fileRef = FC3349941E9F73B900936FE1 /* bilibili.js */; };
 		FC4704671D46086E009F0B62 /* DownloadFile2.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4704661D46086E009F0B62 /* DownloadFile2.m */; };
+		FC47770A1FE27EFC00A273EF /* HttpTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4777081FE27EFC00A273EF /* HttpTestVC.m */; };
+		FC47770B1FE27EFC00A273EF /* HttpTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC4777091FE27EFC00A273EF /* HttpTestVC.xib */; };
+		FC7890E5201B2DE800AEAFAF /* iphone(xcode9)模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FC7890E4201B2DE800AEAFAF /* iphone(xcode9)模版Contents.json */; };
 		FC7D8BEC1D2A74F00009EF7F /* DownloadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */; };
 		FC80EF2A1CE2C48B00935EF8 /* DataReadWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */; };
+		FC8E40901E9B17E2003D1201 /* NewFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8E408E1E9B17E2003D1201 /* NewFileViewController.m */; };
+		FC8E40911E9B17E2003D1201 /* NewFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC8E408F1E9B17E2003D1201 /* NewFileViewController.xib */; };
 		FC99B96F1CFC1CAA001D3F99 /* mainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99B96E1CFC1CAA001D3F99 /* mainWindowController.m */; };
 		FC9F87C31CEC208B007C9727 /* appIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9F87C11CEC208B007C9727 /* appIconViewController.m */; };
 		FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9F87C21CEC208B007C9727 /* appIconViewController.xib */; };
 		FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */; };
 		FCC3B5521D327FD500BA23B1 /* iphone模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCC3B5511D327FD500BA23B1 /* iphone模版Contents.json */; };
 		FCC3B5541D32802000BA23B1 /* mac模版Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FCC3B5531D32802000BA23B1 /* mac模版Contents.json */; };
+		FCCA96951E9CBE80003186A1 /* ExcelToJsonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA96931E9CBE80003186A1 /* ExcelToJsonVC.m */; };
+		FCCA96961E9CBE80003186A1 /* ExcelToJsonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCA96941E9CBE80003186A1 /* ExcelToJsonVC.xib */; };
 		FCE8B74F1CF849F700B3BFD2 /* testVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE8B74D1CF849F700B3BFD2 /* testVC.m */; };
 		FCE8B7501CF849F700B3BFD2 /* testVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE8B74E1CF849F700B3BFD2 /* testVC.xib */; };
 /* End PBXBuildFile section */
@@ -70,6 +79,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02A3780A8CD3E06B054FAB6A /* libPods-SmallTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmallTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41074F7D3F371B875D7C7FCA /* Pods-SmallTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmallTools/Pods-SmallTools.debug.xcconfig"; sourceTree = "<group>"; };
+		AAE34914AE0504F67FB42596 /* Pods-SmallTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmallTools/Pods-SmallTools.release.xcconfig"; sourceTree = "<group>"; };
 		FC05A0F71D12A834005FBD27 /* zuo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuo.png; sourceTree = "<group>"; };
 		FC0745591D2CDF6A000DFBA6 /* samllTools1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samllTools1ViewController.h; sourceTree = "<group>"; };
 		FC07455A1D2CDF6A000DFBA6 /* samllTools1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = samllTools1ViewController.m; sourceTree = "<group>"; };
@@ -126,12 +138,20 @@
 		FC2BE6CF1CABAB65006310BD /* nameSpaceBugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameSpaceBugViewController.xib; sourceTree = "<group>"; };
 		FC2BE6D41CABC54D006310BD /* BianLiFileList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BianLiFileList.h; sourceTree = "<group>"; };
 		FC2BE6D51CABC54D006310BD /* BianLiFileList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BianLiFileList.m; sourceTree = "<group>"; };
+		FC3349941E9F73B900936FE1 /* bilibili.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bilibili.js; sourceTree = "<group>"; };
 		FC4704651D46086E009F0B62 /* DownloadFile2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFile2.h; sourceTree = "<group>"; };
 		FC4704661D46086E009F0B62 /* DownloadFile2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFile2.m; sourceTree = "<group>"; };
+		FC4777071FE27EFC00A273EF /* HttpTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTestVC.h; sourceTree = "<group>"; };
+		FC4777081FE27EFC00A273EF /* HttpTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTestVC.m; sourceTree = "<group>"; };
+		FC4777091FE27EFC00A273EF /* HttpTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpTestVC.xib; sourceTree = "<group>"; };
+		FC7890E4201B2DE800AEAFAF /* iphone(xcode9)模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iphone(xcode9)模版Contents.json"; sourceTree = "<group>"; };
 		FC7D8BEA1D2A74F00009EF7F /* DownloadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFile.h; sourceTree = "<group>"; };
 		FC7D8BEB1D2A74F00009EF7F /* DownloadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFile.m; sourceTree = "<group>"; };
 		FC80EF281CE2C48B00935EF8 /* DataReadWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataReadWrite.h; path = "文件读写/DataReadWrite.h"; sourceTree = "<group>"; };
 		FC80EF291CE2C48B00935EF8 /* DataReadWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataReadWrite.m; path = "文件读写/DataReadWrite.m"; sourceTree = "<group>"; };
+		FC8E408D1E9B17E2003D1201 /* NewFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFileViewController.h; sourceTree = "<group>"; };
+		FC8E408E1E9B17E2003D1201 /* NewFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFileViewController.m; sourceTree = "<group>"; };
+		FC8E408F1E9B17E2003D1201 /* NewFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewFileViewController.xib; sourceTree = "<group>"; };
 		FC99B96D1CFC1CAA001D3F99 /* mainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainWindowController.h; sourceTree = "<group>"; };
 		FC99B96E1CFC1CAA001D3F99 /* mainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainWindowController.m; sourceTree = "<group>"; };
 		FC9F87C01CEC208B007C9727 /* appIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appIconViewController.h; path = "工具实现代码/应用图标/appIconViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -140,6 +160,9 @@
 		FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100-100.jpg"; sourceTree = "<group>"; };
 		FCC3B5511D327FD500BA23B1 /* iphone模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iphone模版Contents.json"; sourceTree = "<group>"; };
 		FCC3B5531D32802000BA23B1 /* mac模版Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mac模版Contents.json"; sourceTree = "<group>"; };
+		FCCA96921E9CBE80003186A1 /* ExcelToJsonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelToJsonVC.h; sourceTree = "<group>"; };
+		FCCA96931E9CBE80003186A1 /* ExcelToJsonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelToJsonVC.m; sourceTree = "<group>"; };
+		FCCA96941E9CBE80003186A1 /* ExcelToJsonVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExcelToJsonVC.xib; sourceTree = "<group>"; };
 		FCE8B74C1CF849F700B3BFD2 /* testVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testVC.h; sourceTree = "<group>"; };
 		FCE8B74D1CF849F700B3BFD2 /* testVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testVC.m; sourceTree = "<group>"; };
 		FCE8B74E1CF849F700B3BFD2 /* testVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testVC.xib; sourceTree = "<group>"; };
@@ -150,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCA4D9D4602A2A9EEE8F884 /* libPods-SmallTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +194,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CB0BFF9171C86B702A8AD7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02A3780A8CD3E06B054FAB6A /* libPods-SmallTools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E782F2403D7D709DA92AE25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41074F7D3F371B875D7C7FCA /* Pods-SmallTools.debug.xcconfig */,
+				AAE34914AE0504F67FB42596 /* Pods-SmallTools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC0745581D2CDF6A000DFBA6 /* 小工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +275,8 @@
 				FC2660071CAA65A500537C9F /* SmallToolsTests */,
 				FC2660121CAA65A500537C9F /* SmallToolsUITests */,
 				FC265FEF1CAA65A500537C9F /* Products */,
+				8E782F2403D7D709DA92AE25 /* Pods */,
+				8CB0BFF9171C86B702A8AD7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -354,6 +397,9 @@
 		FC2660361CAA8A3100537C9F /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				FC4777061FE27EB300A273EF /* http模拟请求 */,
+				FCCA96911E9CBE51003186A1 /* excel转json */,
+				FC8E408C1E9B16FB003D1201 /* 新建文件 */,
 				FC07456C1D2CECF1000DFBA6 /* 文件合并 */,
 				FC0745581D2CDF6A000DFBA6 /* 小工具 */,
 				FC07455F1D2CDF6A000DFBA6 /* bilibili视频下载 */,
@@ -417,6 +463,17 @@
 			path = "文件遍历";
 			sourceTree = "<group>";
 		};
+		FC4777061FE27EB300A273EF /* http模拟请求 */ = {
+			isa = PBXGroup;
+			children = (
+				FC4777071FE27EFC00A273EF /* HttpTestVC.h */,
+				FC4777081FE27EFC00A273EF /* HttpTestVC.m */,
+				FC4777091FE27EFC00A273EF /* HttpTestVC.xib */,
+			);
+			name = "http模拟请求";
+			path = "工具实现代码/http模拟请求";
+			sourceTree = SOURCE_ROOT;
+		};
 		FC7D8BE91D2A74F00009EF7F /* DownloadFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +494,17 @@
 			name = "数据保存";
 			sourceTree = "<group>";
 		};
+		FC8E408C1E9B16FB003D1201 /* 新建文件 */ = {
+			isa = PBXGroup;
+			children = (
+				FC8E408D1E9B17E2003D1201 /* NewFileViewController.h */,
+				FC8E408E1E9B17E2003D1201 /* NewFileViewController.m */,
+				FC8E408F1E9B17E2003D1201 /* NewFileViewController.xib */,
+			);
+			name = "新建文件";
+			path = "工具实现代码/新建文件";
+			sourceTree = SOURCE_ROOT;
+		};
 		FC9F87BF1CEC1FF3007C9727 /* app icon */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,13 +518,26 @@
 		FCBE64291CED6EBE00CB31E5 /* 资源 */ = {
 			isa = PBXGroup;
 			children = (
+				FC3349941E9F73B900936FE1 /* bilibili.js */,
 				FC05A0F71D12A834005FBD27 /* zuo.png */,
 				FCC3B5511D327FD500BA23B1 /* iphone模版Contents.json */,
 				FC0A7EA01E5BDD8E00C1B03F /* iphone(xcode8)模版Contents.json */,
+				FC7890E4201B2DE800AEAFAF /* iphone(xcode9)模版Contents.json */,
 				FCC3B5531D32802000BA23B1 /* mac模版Contents.json */,
 				FCBE642A1CED6EBE00CB31E5 /* 100-100.jpg */,
 			);
 			path = "资源";
+			sourceTree = SOURCE_ROOT;
+		};
+		FCCA96911E9CBE51003186A1 /* excel转json */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA96921E9CBE80003186A1 /* ExcelToJsonVC.h */,
+				FCCA96931E9CBE80003186A1 /* ExcelToJsonVC.m */,
+				FCCA96941E9CBE80003186A1 /* ExcelToJsonVC.xib */,
+			);
+			name = "excel转json";
+			path = "工具实现代码/excel转json";
 			sourceTree = SOURCE_ROOT;
 		};
 		FCE8B74B1CF849F700B3BFD2 /* 测试视图 */ = {
@@ -477,9 +558,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC2660181CAA65A500537C9F /* Build configuration list for PBXNativeTarget "SmallTools" */;
 			buildPhases = (
+				E479CB8EF70A45DA7936D53F /* [CP] Check Pods Manifest.lock */,
 				FC265FEA1CAA65A500537C9F /* Sources */,
 				FC265FEB1CAA65A500537C9F /* Frameworks */,
 				FC265FEC1CAA65A500537C9F /* Resources */,
+				A9A7FDDE535E6C0C44EDFBDA /* [CP] Embed Pods Frameworks */,
+				3361B88CFF022E1686F5F212 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -573,10 +657,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7890E5201B2DE800AEAFAF /* iphone(xcode9)模版Contents.json in Resources */,
 				FC0745661D2CDF6A000DFBA6 /* samllTools1ViewController.xib in Resources */,
+				FC3349951E9F73B900936FE1 /* bilibili.js in Resources */,
 				FC0A7EA11E5BDD8E00C1B03F /* iphone(xcode8)模版Contents.json in Resources */,
 				FC265FFB1CAA65A500537C9F /* Assets.xcassets in Resources */,
 				FCC3B5541D32802000BA23B1 /* mac模版Contents.json in Resources */,
+				FC47770B1FE27EFC00A273EF /* HttpTestVC.xib in Resources */,
 				FCBE642B1CED6EBE00CB31E5 /* 100-100.jpg in Resources */,
 				FC2BE6C11CAB7FF7006310BD /* defaultViewController.xib in Resources */,
 				FC11A8151CC24B590077A79E /* PlanbookViewController.xib in Resources */,
@@ -584,10 +671,12 @@
 				FCC3B5521D327FD500BA23B1 /* iphone模版Contents.json in Resources */,
 				FC07456A1D2CDF6A000DFBA6 /* bilibiliVideoDownload.xib in Resources */,
 				FC07457B1D2CF9BB000DFBA6 /* FileMergeVC.xib in Resources */,
+				FCCA96961E9CBE80003186A1 /* ExcelToJsonVC.xib in Resources */,
 				FC05A0F81D12A834005FBD27 /* zuo.png in Resources */,
 				FC9F87C41CEC208B007C9727 /* appIconViewController.xib in Resources */,
 				FC2BE6D11CABAB65006310BD /* nameSpaceBugViewController.xib in Resources */,
 				FC2BE6C61CAB837D006310BD /* json_nosjViewController.xib in Resources */,
+				FC8E40911E9B17E2003D1201 /* NewFileViewController.xib in Resources */,
 				FCE8B7501CF849F700B3BFD2 /* testVC.xib in Resources */,
 				FC265FFE1CAA65A500537C9F /* Main.storyboard in Resources */,
 			);
@@ -609,6 +698,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3361B88CFF022E1686F5F212 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmallTools/Pods-SmallTools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A7FDDE535E6C0C44EDFBDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmallTools/Pods-SmallTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E479CB8EF70A45DA7936D53F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC265FEA1CAA65A500537C9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -619,10 +756,13 @@
 				FC0745691D2CDF6A000DFBA6 /* bilibiliVideoDownload.m in Sources */,
 				FC2BE6D61CABC54D006310BD /* BianLiFileList.m in Sources */,
 				FC2BE6C51CAB837D006310BD /* json_nosjViewController.m in Sources */,
+				FC47770A1FE27EFC00A273EF /* HttpTestVC.m in Sources */,
 				FC2660351CAA88EF00537C9F /* bottomViewController.m in Sources */,
 				FC99B96F1CFC1CAA001D3F99 /* mainWindowController.m in Sources */,
+				FCCA96951E9CBE80003186A1 /* ExcelToJsonVC.m in Sources */,
 				FC2BE6C01CAB7FF7006310BD /* defaultViewController.m in Sources */,
 				FC265FF91CAA65A500537C9F /* mainViewController.m in Sources */,
+				FC8E40901E9B17E2003D1201 /* NewFileViewController.m in Sources */,
 				FC2660251CAA744D00537C9F /* rightViewController.m in Sources */,
 				FC2660301CAA84DE00537C9F /* TopViewController.m in Sources */,
 				FC07456B1D2CDF6A000DFBA6 /* ViedoDownloadCell.m in Sources */,
@@ -767,6 +907,7 @@
 		};
 		FC2660191CAA65A500537C9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41074F7D3F371B875D7C7FCA /* Pods-SmallTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -779,6 +920,7 @@
 		};
 		FC26601A1CAA65A500537C9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE34914AE0504F67FB42596 /* Pods-SmallTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				COMBINE_HIDPI_IMAGES = YES;

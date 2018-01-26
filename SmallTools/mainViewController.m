@@ -28,8 +28,8 @@
 //    
 //      [NSApp setApplicationIconImage:[NSImage imageNamed:@"zhijie1"]];
   
-    NSButton* btn = [[NSButton alloc] initWithFrame:NSMakeRect(0, 0, 200, 30)];
-    btn.stringValue = @"123";
+//    NSButton* btn = [[NSButton alloc] initWithFrame:NSMakeRect(0, 0, 200, 30)];
+//    btn.stringValue = @"123";
     
 
 }

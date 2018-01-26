@@ -63,6 +63,8 @@
         }else if(_popUpbtn.indexOfSelectedItem == 1){
             jsontext = @"iphone(xcode8)模版Contents";
         }else if(_popUpbtn.indexOfSelectedItem == 2){
+            jsontext = @"iphone(xcode9)模版Contents";
+        }else if(_popUpbtn.indexOfSelectedItem == 3){
           jsontext = @"mac模版Contents";
         }
       

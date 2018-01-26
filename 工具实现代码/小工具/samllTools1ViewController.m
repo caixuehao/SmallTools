@@ -39,7 +39,6 @@
 
 - (IBAction)关键字替换:(id)sender {
     _tv1.string =  [_tv1.string stringByReplacingOccurrencesOfString:_tf1.stringValue withString:_tf2.stringValue];
-
 }
 
 - (IBAction)文档转格式:(id)sender {
@@ -47,12 +46,12 @@
     NSLog(@"%lu",data.length);
     
     if(isjson){
-     NSMutableDictionary* jsonData_dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-     [[NSJSONSerialization dataWithJSONObject:jsonData_dic options:NSJSONWritingPrettyPrinted error:nil] writeToFile:_path_str atomically:YES];
-     return;
+        NSMutableDictionary* jsonData_dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        [[NSJSONSerialization dataWithJSONObject:jsonData_dic options:NSJSONWritingPrettyPrinted error:nil] writeToFile:_path_str atomically:YES];
+        return;
     }
     
-    NSStringEncoding enc =CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
     NSString*  content = [[NSString alloc] initWithData:data encoding:enc];
     //写入
     NSError* error = nil;

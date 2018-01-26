@@ -37,6 +37,9 @@
                     @"小工具2",\
                     @"b站视频下载",\
                     @"文件合并",\
+                    @"新建空文件",\
+                    @"excel转json",\
+                    @"http协议发送模拟",\
                     @"整合"\
                     ]
 
@@ -50,11 +53,14 @@
                        @"小工具2",\
                        @"b站视频下载",\
                        @"文件合并工具（mac自带的感觉有点坑）",\
+                       @"新建空文件",\
+                       @"excel转json",\
+                       @"http协议发送模拟",\
                        @"就是这个程序框架"\
                       ]
 
-//工具开发状态(0还没做（或者懒得做了），1完成可用，2正在做)
-#define TOOLS_BUFF_ARR @[@1,\
+//工具开发状态(0还没做（或者懒得做了），1完成可用，2正在做,3隐藏)
+#define TOOLS_BUFF_ARR @[@3,\
                          @1,\
                          @1,\
                          @1,\
@@ -62,6 +68,9 @@
                          @1,\
                          @1,\
                          @1,\
+                         @1,\
+                         @1,\
+                         @0,\
                          @1,\
                          @1\
                             ]
@@ -97,11 +106,15 @@
 #import "FileMergeVC.h"
 #define TOOL_CLASSES_NAME_8 FileMergeVC
 
-#define TOOL_CLASSES_NAME_9 defaultViewController
+#import "NewFileViewController.h"
+#define TOOL_CLASSES_NAME_9 NewFileViewController
 
-#define TOOL_CLASSES_NAME_10 defaultViewController
+#import "ExcelToJsonVC.h"
+#define TOOL_CLASSES_NAME_10 ExcelToJsonVC
 
-#define TOOL_CLASSES_NAME_11 defaultViewController
+#import "HttpTestVC.h"
+#define TOOL_CLASSES_NAME_11 HttpTestVC
 
+#define TOOL_CLASSES_NAME_12 defaultViewController
 
 #endif /* smallToolsInfo_h */

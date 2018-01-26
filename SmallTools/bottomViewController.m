@@ -65,6 +65,9 @@
             case 11:
                 vc = [[TOOL_CLASSES_NAME_11 alloc] init];
                 break;
+            case 12:
+                vc = [[TOOL_CLASSES_NAME_12 alloc] init];
+                break;
             default:
                 break;
         }

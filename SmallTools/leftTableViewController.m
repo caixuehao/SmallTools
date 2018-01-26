@@ -25,7 +25,7 @@
     //建立tabelview
     NSScrollView * tableContainer = [[NSScrollView alloc] initWithFrame:NSMakeRect(10, 10, leftTableViewController_MaxWidth-20, TopViewController_MaxHight+bottomViewController_MaxHight-20)];
     NSTableView * tableView = [[NSTableView alloc] initWithFrame:NSMakeRect(0, 0, tableContainer.frame.size.width , tableContainer.frame.size.height)];
-    tableView.rowHeight = 50;//列高
+    tableView.rowHeight = 30;//列高
     
     //初始化一行
     NSTableColumn * column1 = [[NSTableColumn alloc] initWithIdentifier:@"col1"];
@@ -98,7 +98,12 @@
 //    [btncell setTitle:tools_arr[row]];
 }
 
-
+- (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
+    if ([tools_buff_arr[row] intValue] == 3) {
+            return 1;
+    }
+    return  tableView.rowHeight;
+}
 //操作cell调用
 -( void )tableView:( NSTableView *)tableView setObjectValue:( id )object forTableColumn:( NSTableColumn *)tableColumn row:( NSInteger )row
 {
